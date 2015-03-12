@@ -26,12 +26,56 @@
 	</head>
 
 	<body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo $view['router']->generate('main_homepage'); ?>">Johann SERVOIRE</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="<?php echo $view['router']->generate('main_homepage'); ?>">Accueil</a></li>
+                        <li><a href="#cv">CV</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#studies">Etudes et expériences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
         <div class="container">
             <?php $view['slots']->output('_content'); ?>
         </div>
         <div class="footer">
             <div class="container">
-                <p class="text-muted">Footer</p>
+                <p class="text-muted">© 2015 - <a href="http://www.johann-servoire.fr/">SERVOIRE Johann</a> tous droits réservés.</p>
+                <ul id="listSocial" class="list-inline">
+                    <li>
+                        <a href="https://github.com/Johann-S">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/johann.servoire">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/jservoire">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/+JohannServoire/">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 	</body>
