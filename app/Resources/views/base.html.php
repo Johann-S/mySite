@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="events4App">
+<html lang="fr" ng-app="mySiteApp">
 	<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
