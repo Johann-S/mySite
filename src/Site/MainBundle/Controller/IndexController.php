@@ -8,6 +8,8 @@ class IndexController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('MainBundle:Default:index.html.php');
+        return $this->render('MainBundle:Default:index.html.php',array(
+            'scripts' => array('js/indexCtrl.js')
+        ));
     }
 }
