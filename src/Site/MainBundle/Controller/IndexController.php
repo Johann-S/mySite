@@ -9,7 +9,14 @@ class IndexController extends Controller
     public function indexAction()
     {
         return $this->render('MainBundle:Default:index.html.php',array(
+            'activeIndex' => true,
             'scripts' => array('js/indexCtrl.js')
+        ));
+    }
+
+    public function skillsAction() {
+        return $this->render('MainBundle:Default:skills.html.php',array(
+            'activeSkills' => true
         ));
     }
 }

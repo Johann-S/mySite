@@ -39,9 +39,13 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo $view['router']->generate('main_homepage'); ?>">Accueil</a></li>
+                        <li <?php if (isset($activeIndex)) : ?>class="active"<?php endif; ?>>
+                            <a href="<?php echo $view['router']->generate('main_homepage'); ?>">Accueil</a>
+                        </li>
                         <li><a href="#cv">CV</a></li>
-                        <li><a href="#skills">Compétences</a></li>
+                        <li <?php if (isset($activeSkills)) : ?>class="active"<?php endif; ?>>
+                            <a href="<?php echo $view['router']->generate('skills_page'); ?>">Compétences</a>
+                        </li>
                         <li><a href="#studies">Etudes et expériences</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>

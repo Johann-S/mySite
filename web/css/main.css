@@ -55,3 +55,62 @@ body > .container {
     display: none;
     font-size: 18px;
 }
+
+#skillPanelHead {
+    font-size: 20px;
+}
+
+/* Tabs on left */
+.tabs-left > .nav-pills {
+    border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+    display: block;
+}
+
+.tabs-left > .nav-pills > li {
+    float: none;
+}
+
+.tabs-left > .nav-pills > li > a {
+    min-width: 74px;
+    margin-right: 0;
+    margin-bottom: 3px;
+}
+
+.tabs-left > .nav-pills {
+    float: left;
+    margin-right: 19px;
+    border-right: 1px solid #df691a;
+}
+
+.tabs-left > .nav-pills > li > a {
+    margin-right: -1px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-pills > li > a:hover,
+.tabs-left > .nav-pills > li > a:focus {
+    border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #df691a;
+    text-decoration: none;
+}
+
+.tabs-left > .nav-pills .active > a,
+.tabs-left > .nav-pills .active > a:hover,
+.tabs-left > .nav-pills .active > a:focus {
+    border-color: #ddd transparent #ddd #ddd;
+    *border-right-color: #ffffff;
+}
