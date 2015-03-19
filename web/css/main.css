@@ -60,6 +60,17 @@ body > .container {
     font-size: 20px;
 }
 
+.fa-star,
+.fa-star-o,
+.fa-star-half-empty {
+    color: #FFD203;
+}
+
+#listProgLang {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
 /* Tabs on left */
 .tabs-left > .nav-pills {
     border-bottom: 0;

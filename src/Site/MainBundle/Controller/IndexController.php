@@ -15,7 +15,7 @@ class IndexController extends Controller
     }
 
     public function skillsAction() {
-        return $this->render('MainBundle:Default:skills.html.php',array(
+        return $this->render('MainBundle:Skills:skills.html.php',array(
             'activeSkills' => true
         ));
     }
