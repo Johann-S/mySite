@@ -1,4 +1,4 @@
-<ul id="listProgLang" class="list-unstyled col-md-3">
+<ul class="list-unstyled col-md-3 list_skills">
     <li>
         PHP
         <span class="rating" style="margin-left: 97px;">
