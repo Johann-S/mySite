@@ -46,7 +46,9 @@
                         <li <?php if (isset($activeSkills)) : ?>class="active"<?php endif; ?>>
                             <a href="<?php echo $view['router']->generate('skills_page'); ?>">Compétences</a>
                         </li>
-                        <li><a href="#studies">Etudes et expériences</a></li>
+                        <li <?php if (isset($activeExp)) : ?>class="active"<?php endif; ?>>
+                            <a href="<?php echo $view['router']->generate('experience_page'); ?>">Etudes et expériences</a>
+                        </li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->

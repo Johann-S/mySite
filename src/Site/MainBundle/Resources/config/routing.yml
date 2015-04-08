@@ -9,3 +9,11 @@ skills_page:
 skills_page_old:
     path:     /mes-competences-en-informatique.html
     defaults: { _controller: MainBundle:Index:skills }
+
+experience_page:
+    path: /experiences/
+    defaults: { _controller: MainBundle:Index:experience }
+
+experience_page_old:
+    path: /etudes-et-experiences.html
+    defaults: { _controller: MainBundle:Index:experience }

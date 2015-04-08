@@ -3,7 +3,7 @@
     $view['slots']->set('title', 'Compétences - Johann SERVOIRE');
 ?>
 <div class="panel panel-default">
-    <div id="skillPanelHead" class="panel-heading">Compétences</div>
+    <div class="panel-heading">Compétences</div>
     <div class="panel-body tabs-left">
         <ul role="tablist" class="nav nav-pills nav-stacked" id="myTab">
             <li class="active" role="presentation">
