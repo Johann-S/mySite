@@ -20,8 +20,14 @@ class IndexController extends Controller
     }
 
     public function experienceAction() {
+        $buzz = $this->container->get('buzz');
+        $response = $buzz->get('https://api.github.com/users/johann-s',array(
+            'User-Agent: Johann-S'
+        ));
+        $dataReponse = json_decode($response->getContent(),true);
         return $this->render('MainBundle:Default:experience.html.php',array(
-            'activeExp' => true
+            'activeExp' => true,
+            'response' => $dataReponse
         ));
     }
 }

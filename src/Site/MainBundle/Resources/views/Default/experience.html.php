@@ -21,6 +21,7 @@
 <div class="panel panel-default">
     <div class="panel-heading">Github</div>
     <div class="panel-body">
+        <?php var_dump($response); ?>
     </div>
 </div>
 <div class="panel panel-default">
