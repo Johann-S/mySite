@@ -19,6 +19,11 @@
     </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading">Github</div>
+    <div class="panel-body">
+    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading">Etudes</div>
     <div class="panel-body">
         <ul class="list-unstyled listExp">
