@@ -80,6 +80,14 @@ body > .container {
     margin-top: 20px;
 }
 
+#githubAvatar {
+    width: 85px;
+}
+
+#listGithub > li > h4 {
+    text-align: center;
+}
+
 /* Tabs on left */
 .tabs-left > .nav-pills {
     border-bottom: 0;

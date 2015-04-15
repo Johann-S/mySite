@@ -21,7 +21,34 @@
 <div class="panel panel-default">
     <div class="panel-heading">Github</div>
     <div class="panel-body">
-        <?php var_dump($response); ?>
+        <div class="media">
+            <div class="media-left">
+                <a href="<?php echo $response['html_url']; ?>">
+                    <img id="githubAvatar" class="media-object" src="<?php echo $response['avatar_url']; ?>" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    <a href="<?php echo $response['html_url']; ?>">
+                        <?php echo $response['login']; ?>
+                    </a>
+                </h4>
+                <ul id="listGithub" class="list-inline">
+                    <li>
+                        <h4><?php echo $response['followers']; ?></h4>
+                        Followers
+                    </li>
+                    <li>
+                        <h4><?php echo $response['following']; ?></h4>
+                        Following
+                    </li>
+                    <li>
+                        <h4><?php echo $response['public_repos']; ?></h4>
+                        Repository
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 <div class="panel panel-default">
