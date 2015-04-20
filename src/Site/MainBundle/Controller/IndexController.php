@@ -33,7 +33,8 @@ class IndexController extends Controller
 
     public function contactAction() {
         return $this->render('MainBundle:Default:contact.html.php',array(
-            'activeContact' => true
+            'activeContact' => true,
+            'scripts' => array('js/contactCtrl.js')
         ));
     }
 }
