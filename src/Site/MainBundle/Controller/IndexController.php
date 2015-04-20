@@ -30,4 +30,10 @@ class IndexController extends Controller
             'response' => $dataReponse
         ));
     }
+
+    public function contactAction() {
+        return $this->render('MainBundle:Default:contact.html.php',array(
+            'activeContact' => true
+        ));
+    }
 }

@@ -18,19 +18,28 @@ body {
     position: absolute;
     width: 100%;
 }
+
 body > .container {
     padding: 60px 15px 0;
 }
+
 .container .text-muted {
     margin-top: 5px;
     text-align: center;
 }
+
 .footer > .container p {
     color: #ebebeb;
 }
+
 .footer > .container {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+#img_me {
+    height: 190px;
+    min-width: 169px;
 }
 
 #listSocial {
@@ -86,6 +95,17 @@ body > .container {
 
 #listGithub > li > h4 {
     text-align: center;
+}
+
+.control-label {
+    font-size: 15px;
+}
+
+#contactJumbotron {
+    margin-left: auto;
+    margin-right: auto;
+    width: 780px;
+    float: none;
 }
 
 /* Tabs on left */

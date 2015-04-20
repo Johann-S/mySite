@@ -17,3 +17,11 @@ experience_page:
 experience_page_old:
     path: /etudes-et-experiences.html
     defaults: { _controller: MainBundle:Index:experience }
+
+contact_page:
+    path: /contact/
+    defaults: { _controller: MainBundle:Index:contact }
+
+contact_page_old:
+    path: /prendre-contact.html
+    defaults: { _controller: MainBundle:Index:contact }
