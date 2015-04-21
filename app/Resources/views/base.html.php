@@ -85,6 +85,11 @@
                             <i class="fa fa-google-plus"></i>
                         </a>
                     </li>
+                    <li>
+                        <a href="mailto:johann.servoire@hotmail.fr">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
