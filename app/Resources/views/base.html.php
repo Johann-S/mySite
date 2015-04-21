@@ -42,7 +42,9 @@
                         <li <?php if (isset($activeIndex)) : ?>class="active"<?php endif; ?>>
                             <a href="<?php echo $view['router']->generate('main_homepage'); ?>">Accueil</a>
                         </li>
-                        <li><a href="#cv">CV</a></li>
+                        <li>
+                            <a href="/cv/CV.pdf">CV</a>
+                        </li>
                         <li <?php if (isset($activeSkills)) : ?>class="active"<?php endif; ?>>
                             <a href="<?php echo $view['router']->generate('skills_page'); ?>">Compétences</a>
                         </li>
