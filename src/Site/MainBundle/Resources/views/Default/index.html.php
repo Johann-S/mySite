@@ -3,7 +3,7 @@
     <div id="mediaIndex" class="media">
         <div class="media-left">
             <a href="#">
-                <img id="img_me" class="media-object img-responsive img-thumbnail" src="<?php echo $view['assets']->getUrl('img/moi.jpg') ?>" alt="...">
+                <img id="img_me" class="media-object img-responsive img-thumbnail" src="<?php echo $view['assets']->getUrl('img/moi.jpg') ?>" />
             </a>
         </div>
         <div class="media-body">

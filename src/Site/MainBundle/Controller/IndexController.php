@@ -8,32 +8,47 @@ use Symfony\Component\HttpFoundation\Response;
 
 class IndexController extends Controller
 {
-    public function indexAction() {
+    public function indexAction($_locale) {
+        $urlFr = $this->generateUrl('main_homepage', array('_locale' => 'fr'));
+        $urlEn = $this->generateUrl('main_homepage', array('_locale' => 'en'));
         return $this->render('MainBundle:Default:index.html.php',array(
             'activeIndex' => true,
+            'urlFr' => $urlFr,
+            'urlEn' => $urlEn,
+            'locale' => $_locale,
             'scripts' => array('js/indexCtrl.js')
         ));
     }
 
-    public function skillsAction() {
+    public function skillsAction($_locale) {
+        $urlFr = $this->generateUrl('skills_page', array('_locale' => 'fr'));
+        $urlEn = $this->generateUrl('skills_page', array('_locale' => 'en'));
         return $this->render('MainBundle:Skills:skills.html.php',array(
-            'activeSkills' => true
+            'activeSkills' => true,
+            'urlFr' => $urlFr,
+            'urlEn' => $urlEn,
+            'locale' => $_locale
         ));
     }
 
-    public function experienceAction() {
+    public function experienceAction($_locale) {
         $buzz = $this->container->get('buzz');
         $response = $buzz->get('https://api.github.com/users/johann-s',array(
             'User-Agent: Johann-S'
         ));
         $dataReponse = json_decode($response->getContent(),true);
+        $urlFr = $this->generateUrl('experience_page', array('_locale' => 'fr'));
+        $urlEn = $this->generateUrl('experience_page', array('_locale' => 'en'));
         return $this->render('MainBundle:Default:experience.html.php',array(
             'activeExp' => true,
-            'response' => $dataReponse
+            'response' => $dataReponse,
+            'urlFr' => $urlFr,
+            'urlEn' => $urlEn,
+            'locale' => $_locale
         ));
     }
 
-    public function contactAction(Request $request) {
+    public function contactAction(Request $request, $_locale) {
         if ($request->isXmlHttpRequest() && $request->getMethod() === 'POST') {
             $response = new Response();
             $data = json_decode($request->getContent(),true);
@@ -45,8 +60,13 @@ class IndexController extends Controller
             return $response;
         }
 
+        $urlFr = $this->generateUrl('contact_page', array('_locale' => 'fr'));
+        $urlEn = $this->generateUrl('contact_page', array('_locale' => 'en'));
         return $this->render('MainBundle:Default:contact.html.php',array(
             'activeContact' => true,
+            'urlFr' => $urlFr,
+            'urlEn' => $urlEn,
+            'locale' => $_locale,
             'scripts' => array('js/contactCtrl.js')
         ));
     }

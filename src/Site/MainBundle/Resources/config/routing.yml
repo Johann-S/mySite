@@ -1,27 +1,33 @@
 main_homepage:
-    path:     /
-    defaults: { _controller: MainBundle:Index:index }
+    path:     /{_locale}
+    defaults: { _controller: MainBundle:Index:index, _locale: fr }
 
 skills_page:
-    path:     /competences/
-    defaults: { _controller: MainBundle:Index:skills }
+    path:     /{_locale}/competences/
+    defaults: { _controller: MainBundle:Index:skills, _locale: fr }
+    requirements:
+        _locale: en|fr
 
 skills_page_old:
     path:     /mes-competences-en-informatique.html
-    defaults: { _controller: MainBundle:Index:skills }
+    defaults: { _controller: MainBundle:Index:skills, _locale: fr }
 
 experience_page:
-    path: /experiences/
-    defaults: { _controller: MainBundle:Index:experience }
+    path: /{_locale}/experiences/
+    defaults: { _controller: MainBundle:Index:experience, _locale: fr }
+    requirements:
+        _locale: en|fr
 
 experience_page_old:
     path: /etudes-et-experiences.html
-    defaults: { _controller: MainBundle:Index:experience }
+    defaults: { _controller: MainBundle:Index:experience, _locale: fr }
 
 contact_page:
-    path: /contact/
-    defaults: { _controller: MainBundle:Index:contact }
+    path: /{_locale}/contact/
+    defaults: { _controller: MainBundle:Index:contact, _locale: fr }
+    requirements:
+        _locale: en|fr
 
 contact_page_old:
     path: /prendre-contact.html
-    defaults: { _controller: MainBundle:Index:contact }
+    defaults: { _controller: MainBundle:Index:contact, _locale: fr }

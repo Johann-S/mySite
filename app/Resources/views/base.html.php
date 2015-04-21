@@ -54,6 +54,18 @@
                             <a href="<?php echo $view['router']->generate('contact_page'); ?>">Contact</a>
                         </li>
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li <?php if (isset($locale) && $locale === 'fr') : ?>class="active"<?php endif; ?>>
+                            <a href="<?php echo $urlFr; ?>">
+                                <img src="<?php echo $view['assets']->getUrl('img/flag_fr.png'); ?>" />
+                            </a>
+                        </li>
+                        <li <?php if (isset($locale) && $locale === 'en') : ?>class="active"<?php endif; ?>>
+                            <a href="<?php echo $urlEn; ?>">
+                                <img src="<?php echo $view['assets']->getUrl('img/flag_en.png'); ?>" />
+                            </a>
+                        </li>
+                    </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
