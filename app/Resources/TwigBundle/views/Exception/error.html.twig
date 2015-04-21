@@ -18,5 +18,13 @@
         <![endif]-->
 	</head>
 	<body>
+        <div class="container">
+            <div class="row">
+                <h1>Oups! Une erreur de type {{ status_code }} est survenue</h1>
+                <div class="hide">
+                    {{ status_text }}
+                </div>
+            </div>
+        </div>
 	</body>
 </html>
