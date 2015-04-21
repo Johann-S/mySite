@@ -108,6 +108,10 @@ body > .container {
     float: none;
 }
 
+#alertResult p {
+    text-align: center;
+}
+
 /* Tabs on left */
 .tabs-left > .nav-pills {
     border-bottom: 0;

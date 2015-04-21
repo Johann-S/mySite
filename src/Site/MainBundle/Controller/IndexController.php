@@ -3,6 +3,8 @@
 namespace Site\MainBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class IndexController extends Controller
 {
@@ -31,10 +33,47 @@ class IndexController extends Controller
         ));
     }
 
-    public function contactAction() {
+    public function contactAction(Request $request) {
+        if ($request->isXmlHttpRequest() && $request->getMethod() === 'POST') {
+            $response = new Response();
+            $data = json_decode($request->getContent(),true);
+            $result = $this->sendContact($data) ? 'OK' : 'ERROR';
+            $response->headers->set('Content-Type', 'application/json');
+            $response->setContent(json_encode(array(
+                'message' => $result
+            )));
+            return $response;
+        }
+
         return $this->render('MainBundle:Default:contact.html.php',array(
             'activeContact' => true,
             'scripts' => array('js/contactCtrl.js')
         ));
+    }
+
+    private function sendContact($data) {
+        if (!isset($data['email']) || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            return false;
+        }
+        if (!isset($data['message']) || count($data['message']) === 0) {
+            return false;
+        }
+        if (!isset($data['objet'])) {
+            $data['objet'] = 'Demande de contact';
+        }
+        $data['message'] = strip_tags($data['message']);
+        $data['objet'] = strip_tags($data['objet']);
+        $to = $this->container->getParameter('mailer_to');
+        $from = $this->container->getParameter('mailer_user');
+        $message = \Swift_Message::newInstance()
+            ->setSubject($data['objet'])
+            ->setFrom($from)
+            ->setTo($to)
+            ->setBody($this->renderView('MainBundle:Default:template_email.html.php', array(
+                'objet' => $data['objet'],
+                'email' => $data['email'],
+                'message' => $data['message']
+            )),'text/html');
+        return $this->get('mailer')->send($message);
     }
 }

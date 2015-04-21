@@ -1,4 +1,4 @@
-app.controller('contactCtrl',function ($scope) {
+app.controller('contactCtrl',function ($scope, $http) {
     $scope.email = '';
     $scope.objet = '';
     $scope.message = '';
@@ -6,6 +6,7 @@ app.controller('contactCtrl',function ($scope) {
     $scope.fNum = '';
     $scope.sNum = '';
     $scope.answerCaptcha = '';
+    $scope.msgResult = '';
 
     // generate random captcha
     $scope.generateCaptcha = function() { randomCaptcha(this); };
@@ -28,8 +29,33 @@ app.controller('contactCtrl',function ($scope) {
     $scope.submitForm = function ($e) {
         $e.preventDefault();
         this.clearError();
+        $('#alertResult').removeClass('alert-danger').hide();
         if (this.validateForm()) {
-            // send form
+            var scope = this;
+            var tabVars = {
+                email: this.email,
+                objet: this.objet,
+                message: this.message
+            };
+
+            $http.post(window.location.href,tabVars)
+            .success(function (data) {
+                if (data['message'] && data['message'] === 'OK') {
+                    scope.msgResult = 'Message envoyé';
+                    $('#alertResult').addClass('alert-success');
+                }
+                else {
+                    scope.msgResult = 'Une erreur est survenue';
+                    $('#alertResult').addClass('alert-danger');
+                }
+                $('#alertResult').show();
+                $('form').remove();
+            })
+            .error(function() {
+                scope.msgResult = 'Une erreur est survenue';
+                $('#alertResult').addClass('alert-danger')
+                                 .show();
+            });
         }
     };
 

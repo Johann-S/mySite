@@ -2,8 +2,11 @@
     $view->extend('::base.html.php');
     $view['slots']->set('title', 'Contact - Johann SERVOIRE');
 ?>
-<div id="contactJumbotron" class="jumbotron col-md-9">
-    <form class="form-horizontal" ng-controller="contactCtrl">
+<div id="contactJumbotron" class="jumbotron col-md-9" ng-controller="contactCtrl">
+    <div id="alertResult" style="display: none;" class="alert" role="alert">
+        <p>{{msgResult}}</p>
+    </div>
+    <form class="form-horizontal">
         <fieldset>
             <legend>Me contacter</legend>
             <div id="formGrpMail" class="form-group">
