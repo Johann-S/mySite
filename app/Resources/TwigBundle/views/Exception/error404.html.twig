@@ -2,12 +2,13 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<title>Erreur {{ status_code }}</title>
+		<title>Erreur {{ status_code }} - Johann SERVOIRE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="Johann SERVOIRE">
 
 		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
 		<link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css" />
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,10 +19,74 @@
         <![endif]-->
 	</head>
 	<body>
-    <div class="container">
-        <div class="row">
-            <h1>La page demandée est non trouvée</h1>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('main_homepage') }}">Johann SERVOIRE</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="{{ path('main_homepage') }}">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="/cv/CV.pdf">CV</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('skills_page') }}">Compétences</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('experience_page') }}">Etudes et expériences</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('contact_page') }}">Contact</a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <h3>La page demandée est non trouvée</h3>
+            </div>
         </div>
-    </div>
+        <div class="footer">
+            <div class="container">
+                <p class="text-muted">© 2015 - <a href="http://www.johann-servoire.fr/">SERVOIRE Johann</a> tous droits réservés.</p>
+                <ul id="listSocial" class="list-inline">
+                    <li>
+                        <a href="https://github.com/Johann-S">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/johann.servoire">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/jservoire">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/+JohannServoire/">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:johann.servoire@hotmail.fr">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 	</body>
 </html>

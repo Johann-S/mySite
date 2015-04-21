@@ -2,7 +2,7 @@
     $view->extend('::base.html.php');
     $view['slots']->set('title', 'Contact - Johann SERVOIRE');
 ?>
-<div id="contactJumbotron" class="jumbotron col-md-9" ng-controller="contactCtrl">
+<div id="contactJumbotron" class="jumbotron col-md-9 center-block" ng-controller="contactCtrl">
     <div id="alertResult" style="display: none;" class="alert" role="alert">
         <p>{{msgResult}}</p>
     </div>
