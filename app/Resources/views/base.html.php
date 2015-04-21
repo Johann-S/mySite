@@ -39,16 +39,24 @@
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li <?php if (isset($activeIndex)) : ?>class="active"<?php endif; ?>>
-                            <a href="<?php echo $view['router']->generate('main_homepage'); ?>">Accueil</a>
+                            <a href="<?php echo $view['router']->generate('main_homepage'); ?>">
+                                <?php echo $view['translator']->trans('menu_home') ?>
+                            </a>
                         </li>
                         <li>
-                            <a href="/cv/CV.pdf">CV</a>
+                            <a href="/cv/CV.pdf">
+                                <?php echo $view['translator']->trans('menu_cv') ?>
+                            </a>
                         </li>
                         <li <?php if (isset($activeSkills)) : ?>class="active"<?php endif; ?>>
-                            <a href="<?php echo $view['router']->generate('skills_page'); ?>">Compétences</a>
+                            <a href="<?php echo $view['router']->generate('skills_page'); ?>">
+                                <?php echo $view['translator']->trans('menu_skills') ?>
+                            </a>
                         </li>
                         <li <?php if (isset($activeExp)) : ?>class="active"<?php endif; ?>>
-                            <a href="<?php echo $view['router']->generate('experience_page'); ?>">Etudes et expériences</a>
+                            <a href="<?php echo $view['router']->generate('experience_page'); ?>">
+                                <?php echo $view['translator']->trans('menu_exp') ?>
+                            </a>
                         </li>
                         <li <?php if (isset($activeContact)) : ?>class="active"<?php endif; ?>>
                             <a href="<?php echo $view['router']->generate('contact_page'); ?>">Contact</a>
