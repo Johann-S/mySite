@@ -113,6 +113,14 @@ body > .container {
     float: none;
 }
 
+.col-rating {
+    padding-top: 9px;
+}
+
+.control-label-rating {
+    text-align: left;
+}
+
 /* Tabs on left */
 .tabs-left > .nav-pills {
     border-bottom: 0;

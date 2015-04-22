@@ -1,44 +1,52 @@
-<ul class="list-unstyled col-md-4 list_skills">
-    <li>
-        MySQL
-        <span class="rating" style="margin-left: 90px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-half-empty"></span>
-        </span>
-    </li>
-    <li>
-        MongoDB
-        <span class="rating" style="margin-left: 70px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-o"></span>
-        </span>
-    </li>
-    <li>
-        SQL Server
-        <span class="rating" style="margin-left: 64px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-o"></span>
-        </span>
-    </li>
-</ul>
-<ul class="list-unstyled col-md-5 list_skills">
-    <li>
-        Doctrine 2 (ORM & ODM)
-        <span class="rating" style="margin-left: 64px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-o"></span>
-        </span>
-    </li>
-</ul>
+<div class="form-horizontal col-sm-5">
+    <div class="form-group">
+        <label class="col-sm-5 control-label" style="text-align: left;">MySQL</label>
+        <div class="col-sm-4 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-empty"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-5 control-label" style="text-align: left;">MongoDB</label>
+        <div class="col-sm-4 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-5 control-label" style="text-align: left;">SQL Server</label>
+        <div class="col-sm-4 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="form-horizontal col-sm-5">
+    <div class="form-group">
+        <label class="col-sm-8 control-label" style="text-align: left;">Doctrine 2 (ORM & ODM)</label>
+        <div class="col-sm-4 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+            </span>
+        </div>
+    </div>
+</div>

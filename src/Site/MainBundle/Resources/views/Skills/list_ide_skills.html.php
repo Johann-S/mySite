@@ -1,52 +1,62 @@
-<ul class="list-unstyled col-md-4 list_skills">
-    <li>
-        PHPStorm
-        <span class="rating" style="margin-left: 120px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-half-empty"></span>
-        </span>
-    </li>
-    <li>
-        Eclipse
-        <span class="rating" style="margin-left: 146px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-half-empty"></span>
-        </span>
-    </li>
-    <li>
-        Android Studio
-        <span class="rating" style="margin-left: 88px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-half-empty"></span>
-        </span>
-    </li>
-    <li>
-        Netbeans
-        <span class="rating" style="margin-left: 128px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-o"></span>
-        </span>
-    </li>
-    <li>
-        Visual Studio 2013
-        <span class="rating" style="margin-left: 62px;">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-o"></span>
-        </span>
-    </li>
-</ul>
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-3 control-label" style="text-align: left;">PHPStorm</label>
+        <div class="col-sm-2 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-empty"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label" style="text-align: left;">Eclipse</label>
+        <div class="col-sm-2 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-empty"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label" style="text-align: left;">Android Studio</label>
+        <div class="col-sm-2 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-empty"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label" style="text-align: left;">Netbeans</label>
+        <div class="col-sm-2 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label" style="text-align: left;">Visual Studio 2013</label>
+        <div class="col-sm-2 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+            </span>
+        </div>
+    </div>
+</div>

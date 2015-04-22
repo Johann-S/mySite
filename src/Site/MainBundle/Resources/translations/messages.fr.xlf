@@ -50,6 +50,18 @@
                 <source>contact_msgResultFail</source>
                 <target>Une erreur est survenue</target>
             </trans-unit>
+            <trans-unit id="13">
+                <source>skills_title</source>
+                <target>Compétences</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>skills_lang</source>
+                <target>Langages</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>skills_bdd</source>
+                <target>Base de données</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

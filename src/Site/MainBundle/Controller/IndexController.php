@@ -36,12 +36,12 @@ class IndexController extends Controller
         $response = $buzz->get('https://api.github.com/users/johann-s',array(
             'User-Agent: Johann-S'
         ));
-        $dataReponse = json_decode($response->getContent(),true);
+        $dataResponse = json_decode($response->getContent(),true);
         $urlFr = $this->generateUrl('experience_page', array('_locale' => 'fr'));
         $urlEn = $this->generateUrl('experience_page', array('_locale' => 'en'));
         return $this->render('MainBundle:Default:experience.html.php',array(
             'activeExp' => true,
-            'response' => $dataReponse,
+            'response' => $dataResponse,
             'urlFr' => $urlFr,
             'urlEn' => $urlEn,
             'locale' => $_locale

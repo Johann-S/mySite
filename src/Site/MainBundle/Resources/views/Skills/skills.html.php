@@ -1,13 +1,15 @@
 <?php
     $view->extend('::base.html.php');
-    $view['slots']->set('title', 'Compétences - Johann SERVOIRE');
+    $view['slots']->set('title', $view['translator']->trans('skills_title') . ' - Johann SERVOIRE');
 ?>
 <div class="panel panel-default">
-    <div class="panel-heading">Compétences</div>
+    <div class="panel-heading"><?php echo $view['translator']->trans('skills_title') ?></div>
     <div class="panel-body tabs-left">
-        <ul role="tablist" class="nav nav-pills nav-stacked" id="myTab">
+        <ul id="myTab" role="tablist" class="nav nav-pills nav-stacked col-md-2" style="padding-right: 0">
             <li class="active" role="presentation">
-                <a aria-expanded="true" aria-controls="home" data-toggle="tab" role="tab" id="prog-tab" href="#progLang">Langages</a>
+                <a aria-expanded="true" aria-controls="home" data-toggle="tab" role="tab" id="prog-tab" href="#progLang">
+                    <?php echo $view['translator']->trans('skills_lang') ?>
+                </a>
             </li>
             <li role="presentation">
                 <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabFram">Frameworks / Libs</a>
@@ -22,10 +24,12 @@
                 <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabVersion">Versionning</a>
             </li>
             <li role="presentation">
-                <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabBdd">Base de données</a>
+                <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabBdd">
+                    <?php echo $view['translator']->trans('skills_bdd') ?>
+                </a>
             </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content col-md-9" id="myTabContent">
             <div id="progLang" aria-labelledby="prog-tab" class="tab-pane fade in active" role="tabpanel">
                 <?php echo $view->render('MainBundle:Skills:list_languages_skills.html.php'); ?>
             </div>
