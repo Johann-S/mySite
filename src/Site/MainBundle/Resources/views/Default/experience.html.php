@@ -56,7 +56,10 @@
     <div class="panel-body">
         <ul class="list-unstyled listExp">
             <li>
-                <span class="label label-info expLabel">2015</span>Etudiant en quatrième année du cycle d'ingénierie à <a href="http://www.epsi.fr/">l'EPSI Lyon</a>.
+                <span class="label label-info expLabel">2015</span>Etudiant en quatrième année du cycle d'ingénierie - <a href="http://www.epsi.fr/">l'EPSI Lyon</a>.
+            </li>
+            <li>
+                <span class="label label-info expLabel">2013 <i class="fa fa-arrow-right"></i> 2014</span>Bachelor informatique - EPSI Lyon
             </li>
             <li>
                 <span class="label label-info expLabel">2011 <i class="fa fa-arrow-right"></i> 2012</span>BTS I.R.I.S (Informatique et Réseaux pour l'industrie et les Services techniques) - Lycée Edouard Branly - Lyon (69005)
