@@ -42,6 +42,14 @@
                 <source>contact_copyright</source>
                 <target>all rights reserved.</target>
             </trans-unit>
+            <trans-unit id="11">
+                <source>contact_msgResultSuccess</source>
+                <target>Message sent</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>contact_msgResultFail</source>
+                <target>An error occured</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

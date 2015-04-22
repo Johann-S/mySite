@@ -28,6 +28,9 @@ app.controller('contactCtrl',function ($scope, $http) {
 
     $scope.submitForm = function ($e) {
         $e.preventDefault();
+        if ($('#btnSend').hasClass('disable')) {
+            return;
+        }
         this.clearError();
         $('#alertResult').removeClass('alert-danger').hide();
         if (this.validateForm()) {
@@ -37,22 +40,23 @@ app.controller('contactCtrl',function ($scope, $http) {
                 objet: this.objet,
                 message: this.message
             };
-
+            $('#btnSend').addClass('disable');
             $http.post(window.location.href,tabVars)
             .success(function (data) {
-                if (data['message'] && data['message'] === 'OK') {
-                    scope.msgResult = 'Message envoyé';
-                    $('#alertResult').addClass('alert-success');
+                var classResult = (data['message'] && data['message'] === 'OK') ? 'alert-success' : 'alert-danger';
+                scope.msgResult = data['user_msg'];
+                $('#alertResult').addClass(classResult)
+                                 .show();
+                if (data['message'] === 'OK') {
+                    $('form').remove();
                 }
                 else {
-                    scope.msgResult = 'Une erreur est survenue';
-                    $('#alertResult').addClass('alert-danger');
+                    $('#btnSend').removeClass('disable');
                 }
-                $('#alertResult').show();
-                $('form').remove();
             })
             .error(function() {
                 scope.msgResult = 'Une erreur est survenue';
+                $('#btnSend').removeClass('disable');
                 $('#alertResult').addClass('alert-danger')
                                  .show();
             });

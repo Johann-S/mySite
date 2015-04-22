@@ -41,7 +41,7 @@
             <div class="form-group">
                 <label class="col-sm-4 control-label"></label>
                 <div class="col-sm-7">
-                    <button class="btn btn-primary" ng-click="submitForm($event);">
+                    <button id="btnSend" class="btn btn-primary" ng-click="submitForm($event);">
                         <?php echo $view['translator']->trans('contact_send') ?>
                     </button>
                 </div>

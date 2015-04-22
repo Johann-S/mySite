@@ -53,9 +53,12 @@ class IndexController extends Controller
             $response = new Response();
             $data = json_decode($request->getContent(),true);
             $result = $this->sendContact($data) ? 'OK' : 'ERROR';
+            $message = ($result === 'OK') ? $this->get('translator')->trans('contact_msgResultSuccess')
+            : $this->get('translator')->trans('contact_msgResultFail');
             $response->headers->set('Content-Type', 'application/json');
             $response->setContent(json_encode(array(
-                'message' => $result
+                'message' => $result,
+                'user_msg' => $message
             )));
             return $response;
         }
