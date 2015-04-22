@@ -18,6 +18,30 @@
                 <source>menu_exp</source>
                 <target>Etudes et expériences</target>
             </trans-unit>
+            <trans-unit id="5">
+                <source>contact_mail</source>
+                <target>Votre adresse email</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>contact_title</source>
+                <target>Me contacter</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>contact_obj</source>
+                <target>L'objet du message</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>contact_calc</source>
+                <target>Calculez</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>contact_send</source>
+                <target>Envoyer</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>contact_copyright</source>
+                <target>tous droits réservés.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

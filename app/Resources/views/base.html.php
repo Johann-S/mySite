@@ -82,7 +82,7 @@
         </div>
         <div class="footer">
             <div class="container">
-                <p class="text-muted">© 2015 - <a href="http://www.johann-servoire.fr/">SERVOIRE Johann</a> tous droits réservés.</p>
+                <p class="text-muted">© 2015 - <a href="http://www.johann-servoire.fr/">SERVOIRE Johann</a> <?php echo $view['translator']->trans('contact_copyright') ?></p>
                 <ul id="listSocial" class="list-inline">
                     <li>
                         <a href="https://github.com/Johann-S">

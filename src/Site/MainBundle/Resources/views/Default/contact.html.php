@@ -8,15 +8,15 @@
     </div>
     <form class="form-horizontal">
         <fieldset>
-            <legend>Me contacter</legend>
+            <legend><?php echo $view['translator']->trans('contact_title') ?></legend>
             <div id="formGrpMail" class="form-group">
-                <label for="inputEmail" class="col-sm-4 control-label">Votre adresse email :</label>
+                <label for="inputEmail" class="col-sm-4 control-label"><?php echo $view['translator']->trans('contact_mail') ?> :</label>
                 <div class="col-sm-7">
                     <input type="email" ng-model="email" class="form-control" id="inputEmail" placeholder="Email" />
                 </div>
             </div>
             <div id="formGrpObjet" class="form-group">
-                <label for="inputObjet" class="col-sm-4 control-label">L'objet du message :</label>
+                <label for="inputObjet" class="col-sm-4 control-label"><?php echo $view['translator']->trans('contact_obj') ?> :</label>
                 <div class="col-sm-7">
                     <input type="text" ng-model="objet" class="form-control" id="inputObjet" placeholder="Objet" />
                 </div>
@@ -29,7 +29,7 @@
             </div>
             <div id="formGrpCaptcha" class="form-group">
                 <label for="inputCaptcha" class="col-sm-4 control-label">
-                    <span>Calculez : </span><span>{{fNum}}</span><span>{{opCap}}</span><span>{{sNum}}</span>
+                    <span><?php echo $view['translator']->trans('contact_calc') ?> : </span><span>{{fNum}}</span><span>{{opCap}}</span><span>{{sNum}}</span>
                 </label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control" id="inputCaptcha" style="display: inline;width: 80px;" ng-model="answerCaptcha" />
@@ -41,7 +41,9 @@
             <div class="form-group">
                 <label class="col-sm-4 control-label"></label>
                 <div class="col-sm-7">
-                    <button class="btn btn-primary" ng-click="submitForm($event);">Envoyer</button>
+                    <button class="btn btn-primary" ng-click="submitForm($event);">
+                        <?php echo $view['translator']->trans('contact_send') ?>
+                    </button>
                 </div>
             </div>
         </fieldset>
