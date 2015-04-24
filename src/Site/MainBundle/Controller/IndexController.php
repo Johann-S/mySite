@@ -15,8 +15,7 @@ class IndexController extends Controller
             'activeIndex' => true,
             'urlFr' => $urlFr,
             'urlEn' => $urlEn,
-            'locale' => $_locale,
-            'scripts' => array('js/indexCtrl.js')
+            'locale' => $_locale
         ));
     }
 

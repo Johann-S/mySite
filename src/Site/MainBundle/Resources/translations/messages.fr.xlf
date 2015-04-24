@@ -98,6 +98,14 @@
                 <source>exp_ic2</source>
                 <target>catégorie innovation</target>
             </trans-unit>
+            <trans-unit id="25">
+                <source>home_study</source>
+                <target>Etudiant en quatrième année du cycle d'ingénierie à l'EPSI Lyon.</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>home_work</source>
+                <target>Développeur Web en alternance pour la société</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

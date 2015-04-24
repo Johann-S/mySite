@@ -98,6 +98,14 @@
                 <source>exp_ic2</source>
                 <target>contest (Innovation category)</target>
             </trans-unit>
+            <trans-unit id="25">
+                <source>home_study</source>
+                <target>Student in computer engineering at EPSI Lyon.</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>home_work</source>
+                <target>Web developer at</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
