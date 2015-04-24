@@ -62,7 +62,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-6 control-label" style="text-align: left;">Bootstrap (Contributeur)</label>
+        <label class="col-sm-6 control-label" style="text-align: left;">Bootstrap (<?php echo $view['translator']->trans('contrib') ?>)</label>
         <div class="col-sm-4 col-rating">
             <span class="rating">
                 <span class="fa fa-star"></span>
@@ -74,7 +74,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-6 control-label" style="text-align: left;">Ratchet (Contributeur)</label>
+        <label class="col-sm-6 control-label" style="text-align: left;">Ratchet (<?php echo $view['translator']->trans('contrib') ?>)</label>
         <div class="col-sm-4 col-rating">
             <span class="rating">
                 <span class="fa fa-star"></span>

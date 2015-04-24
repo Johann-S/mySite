@@ -7,6 +7,11 @@ body {
     margin-bottom: 60px;
 }
 
+a {
+    color: #f2aa1a;
+    text-decoration: none;
+}
+
 #navbar {
     font-size: 16px;
 }
@@ -58,11 +63,6 @@ body > .container {
 
 #mediaIndex {
     margin-bottom: 10px;
-}
-
-#learnMore {
-    display: none;
-    font-size: 18px;
 }
 
 .panel-heading {

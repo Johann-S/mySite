@@ -100,11 +100,43 @@
             </trans-unit>
             <trans-unit id="25">
                 <source>home_study</source>
-                <target>Etudiant en quatrième année du cycle d'ingénierie à l'EPSI Lyon.</target>
+                <target>Etudiant en quatrième année du cycle d'ingénierie à l'EPSI Lyon</target>
             </trans-unit>
             <trans-unit id="26">
                 <source>home_work</source>
                 <target>Développeur Web en alternance pour la société</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>home_location</source>
+                <target>Lieu de résidence</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>home_goal</source>
+                <target>Mon ambition</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>home_transport</source>
+                <target>Moyen de locomotion</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>home_years</source>
+                <target>ans</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>home_years</source>
+                <target>ans</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>home_drive</source>
+                <target>Permis B et véhiculé</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>home_goal_text</source>
+                <target>Acquérir de l'expérience en développement, gestion de projet et obtenir mon Master en Ingénierie Informatique</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>contrib</source>
+                <target>Contributeur</target>
             </trans-unit>
         </body>
     </file>

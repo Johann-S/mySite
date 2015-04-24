@@ -1,5 +1,5 @@
 <?php $view->extend('::base.html.php'); ?>
-<div class="jumbotron" ng-controller="indexCtrl">
+<div class="jumbotron">
     <div id="mediaIndex" class="media">
         <div class="media-left">
             <a href="#">
@@ -9,17 +9,16 @@
         <div class="media-body">
             <p>
                 <?php echo $view['translator']->trans('home_study') ?><br/>
-                <?php echo $view['translator']->trans('home_work') ?> <a href="http://www.interactiv-technologies.fr"/>Interactiv' Technologies</a>.
+                <?php echo $view['translator']->trans('home_work') ?> <a href="http://www.interactiv-technologies.fr"/>Interactiv' Technologies</a>
             </p>
-            <ul class="list-unstyled">
-                <li><b>Age:</b> 25 ans</li>
-                <li><b>Lieu de résidence:</b> Région Lyonnaise</li>
-                <li><b>Moyen de locomotion:</b> Permis B et véhiculé</li>
-                <li style="margin-top: 10px;">
-                    <b>Mon ambition:</b><br/>
+            <ul class="list-unstyled" style="font-size: 18px;">
+                <li><b>Age:</b> 25 <?php echo $view['translator']->trans('home_years') ?></li>
+                <li><b><?php echo $view['translator']->trans('home_location') ?>:</b> Lyon</li>
+                <li><b><?php echo $view['translator']->trans('home_transport') ?>:</b> <?php echo $view['translator']->trans('home_drive') ?></li>
+                <li>
+                    <b><?php echo $view['translator']->trans('home_goal') ?>:</b><br/>
                     <p style="font-size: 18px;">
-                        Acquérir de l'expérience en développement, gestion de projet et obtenir mon
-                        Master en Ingénierie Informatique.
+                        <?php echo $view['translator']->trans('home_goal_text') ?>
                     </p>
                 </li>
             </ul>
