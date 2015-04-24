@@ -7,13 +7,13 @@
     <div class="panel-body">
         <ul class="list-unstyled listExp">
             <li>
-                <span class="label label-info expLabel">2012 <i class="fa fa-arrow-right"></i> 2015</span>Développeur Web pour la société <a href="http://www.interactiv-technologies.fr/">Interactiv' Technologies</a>
+                <span class="label label-info expLabel">2012 <i class="fa fa-arrow-right"></i> 2015</span><?php echo $view['translator']->trans('exp_it') ?> <a href="http://www.interactiv-technologies.fr/">Interactiv' Technologies</a>
             </li>
             <li>
-                <span class="label label-info expLabel">2015</span>Arrivé troisième de la final national de <a href="https://www.imaginecup.com/">l'ImagineCup</a> catégorie innovation : <a href="http://www.omnitag.fr">http://www.omnitag.fr</a>
+                <span class="label label-info expLabel">2015</span><?php echo $view['translator']->trans('exp_ic') ?> <a href="https://www.imaginecup.com/">ImagineCup</a> <?php echo $view['translator']->trans('exp_ic2') ?> : <a href="http://www.omnitag.fr">http://www.omnitag.fr</a>
             </li>
             <li>
-                <span class="label label-info expLabel">2011</span>Stage de Développement web (6 semaines) pour l'entreprise <a href="http://www.alchimiste.fr/">Alchimiste</a>
+                <span class="label label-info expLabel">2011</span><?php echo $view['translator']->trans('exp_alchi') ?>  <a href="http://www.alchimiste.fr/">Alchimiste</a>
             </li>
         </ul>
     </div>
@@ -52,20 +52,20 @@
     </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading">Etudes</div>
+    <div class="panel-heading"><?php echo $view['translator']->trans('studies_title') ?></div>
     <div class="panel-body">
         <ul class="list-unstyled listExp">
             <li>
-                <span class="label label-info expLabel">2015</span>Etudiant en quatrième année du cycle d'ingénierie - <a href="http://www.epsi.fr/">l'EPSI Lyon</a>.
+                <span class="label label-info expLabel">2015 <i class="fa fa-arrow-right"></i> 2016</span><?php echo $view['translator']->trans('studies_master') ?> - <a href="http://www.epsi.fr/">EPSI Lyon</a>
             </li>
             <li>
-                <span class="label label-info expLabel">2013 <i class="fa fa-arrow-right"></i> 2014</span>Bachelor informatique - EPSI Lyon
+                <span class="label label-info expLabel">2013 <i class="fa fa-arrow-right"></i> 2014</span><?php echo $view['translator']->trans('studies_licence') ?> - <a href="http://www.epsi.fr/">EPSI Lyon</a>
             </li>
             <li>
-                <span class="label label-info expLabel">2011 <i class="fa fa-arrow-right"></i> 2012</span>BTS I.R.I.S (Informatique et Réseaux pour l'industrie et les Services techniques) - Lycée Edouard Branly - Lyon (69005)
+                <span class="label label-info expLabel">2011 <i class="fa fa-arrow-right"></i> 2012</span><?php echo $view['translator']->trans('studies_bts') ?> - Lycée Edouard Branly - Lyon
             </li>
             <li>
-                <span class="label label-info expLabel">2009 <i class="fa fa-arrow-right"></i> 2010</span>Bac STI Electronique - Lycée Jean-Baptiste De La Salle - Lyon (69001)
+                <span class="label label-info expLabel">2009 <i class="fa fa-arrow-right"></i> 2010</span><?php echo $view['translator']->trans('studies_bac') ?> - Lycée Jean-Baptiste De La Salle - Lyon
             </li>
         </ul>
     </div>

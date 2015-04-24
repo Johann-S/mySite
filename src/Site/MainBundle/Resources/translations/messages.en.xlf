@@ -62,6 +62,42 @@
                 <source>skills_bdd</source>
                 <target>Databases</target>
             </trans-unit>
+            <trans-unit id="16">
+                <source>studies_title</source>
+                <target>Studies</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>studies_master</source>
+                <target>Five-year degree in Computer Sciences and Information Technology</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>studies_licence</source>
+                <target>Three-year degree</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>studies_bts</source>
+                <target>Two-year technical degree in embedded computing</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>studies_bac</source>
+                <target>French Baccalauréat in electronics</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>exp_it</source>
+                <target>Web developer for</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>exp_alchi</source>
+                <target>Internship in web development (6 weeks) for</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>exp_ic</source>
+                <target>Third in the Microsoft's</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>exp_ic2</source>
+                <target>contest (Innovation category)</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

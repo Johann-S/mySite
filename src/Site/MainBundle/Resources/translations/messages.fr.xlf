@@ -62,6 +62,42 @@
                 <source>skills_bdd</source>
                 <target>Base de données</target>
             </trans-unit>
+            <trans-unit id="16">
+                <source>studies_title</source>
+                <target>Etudes</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>studies_master</source>
+                <target>Master en développement informatique</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>studies_licence</source>
+                <target>Bachelor informatique</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>studies_bts</source>
+                <target>BTS I.R.I.S (Informatique et Réseaux pour l'industrie et les Services techniques)</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>studies_bac</source>
+                <target>Bac STI Electronique</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>exp_it</source>
+                <target>Développeur Web pour la société</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>exp_alchi</source>
+                <target>Stage de Développement web (6 semaines) pour l'entreprise</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>exp_ic</source>
+                <target>Arrivé troisième de la final national de l'</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>exp_ic2</source>
+                <target>catégorie innovation</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
