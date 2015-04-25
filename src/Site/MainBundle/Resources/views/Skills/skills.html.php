@@ -4,7 +4,7 @@
 ?>
 <div class="panel panel-default">
     <div class="panel-heading"><?php echo $view['translator']->trans('skills_title') ?></div>
-    <div class="panel-body tabs-left">
+    <div id="panelSkills" class="panel-body tabs-left">
         <ul id="myTab" role="tablist" class="nav nav-pills nav-stacked col-md-2" style="padding-right: 0">
             <li class="active" role="presentation">
                 <a aria-expanded="true" aria-controls="home" data-toggle="tab" role="tab" id="prog-tab" href="#progLang">

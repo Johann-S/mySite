@@ -65,15 +65,6 @@ body > .container {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
-    #mediaIndex .media-left {
-        display: block;
-    }
-    #mediaIndex .media-body {
-        width: auto;
-    }
-}
-
 .panel-heading {
     font-size: 20px;
 }
@@ -131,7 +122,7 @@ body > .container {
 }
 
 /* Tabs on left */
-.tabs-left > .nav-pills {
+#panelSkills > .nav-pills {
     border-bottom: 0;
 }
 
@@ -145,31 +136,31 @@ body > .container {
     display: block;
 }
 
-.tabs-left > .nav-pills > li {
+#panelSkills > .nav-pills > li {
     float: none;
 }
 
-.tabs-left > .nav-pills > li > a {
+#panelSkills > .nav-pills > li > a {
     min-width: 74px;
     margin-right: 0;
     margin-bottom: 3px;
 }
 
-.tabs-left > .nav-pills {
+#panelSkills > .nav-pills {
     float: left;
     margin-right: 19px;
     border-right: 1px solid #df691a;
 }
 
-.tabs-left > .nav-pills > li > a {
+#panelSkills > .nav-pills > li > a {
     margin-right: -1px;
     -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
 }
 
-.tabs-left > .nav-pills > li > a:hover,
-.tabs-left > .nav-pills > li > a:focus {
+#panelSkills > .nav-pills > li > a:hover,
+#panelSkills > .nav-pills > li > a:focus {
     border-color: #eeeeee #dddddd #eeeeee #eeeeee;
 }
 
@@ -178,9 +169,48 @@ body > .container {
     text-decoration: none;
 }
 
-.tabs-left > .nav-pills .active > a,
-.tabs-left > .nav-pills .active > a:hover,
-.tabs-left > .nav-pills .active > a:focus {
+#panelSkills > .nav-pills .active > a,
+#panelSkills > .nav-pills .active > a:hover,
+#panelSkills > .nav-pills .active > a:focus {
     border-color: #ddd transparent #ddd #ddd;
     *border-right-color: #ffffff;
+}
+
+/* for mobile device */
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    #mediaIndex .media-left {
+        display: block;
+    }
+    #mediaIndex .media-body {
+        width: auto;
+    }
+
+    #panelSkills > .nav-pills {
+        float: none;
+        margin-right: 0;
+        border-right: 0;
+    }
+
+    #panelSkills > .nav-pills > li > a {
+        margin-bottom: 0;
+    }
+
+    #panelSkills > .nav-pills > li {
+        float: left;
+    }
+
+    #panelSkills > .nav-pills > li > a {
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    #myTab {
+        margin-bottom: 15px;
+    }
+
+    #panelSkills > .nav-pills {
+        border-bottom: 1px solid #df691a;
+        padding-bottom: 10px;
+    }
 }
