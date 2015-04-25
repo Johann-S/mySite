@@ -44,6 +44,7 @@
                     <button id="btnSend" class="btn btn-primary" ng-click="submitForm($event);">
                         <?php echo $view['translator']->trans('contact_send') ?>
                     </button>
+                    <i id="loader" style="display:none;" class="fa fa-spinner fa-spin"></i>
                 </div>
             </div>
         </fieldset>

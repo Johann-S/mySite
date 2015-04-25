@@ -121,6 +121,10 @@ body > .container {
     text-align: left;
 }
 
+#loader {
+    margin-left: 10px;
+}
+
 /* Tabs on left */
 #panelSkills > .nav-pills {
     border-bottom: 0;

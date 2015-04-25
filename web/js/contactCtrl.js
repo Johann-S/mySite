@@ -41,6 +41,7 @@ app.controller('contactCtrl',function ($scope, $http) {
                 message: this.message
             };
             $('#btnSend').addClass('disable');
+            $('#loader').show();
             $http.post(window.location.href,tabVars)
             .success(function (data) {
                 var classResult = (data['message'] && data['message'] === 'OK') ? 'alert-success' : 'alert-danger';
@@ -52,11 +53,13 @@ app.controller('contactCtrl',function ($scope, $http) {
                 }
                 else {
                     $('#btnSend').removeClass('disable');
+                    $('#loader').hide();
                 }
             })
             .error(function() {
                 scope.msgResult = 'Une erreur est survenue';
                 $('#btnSend').removeClass('disable');
+                $('#loader').hide();
                 $('#alertResult').addClass('alert-danger')
                                  .show();
             });
