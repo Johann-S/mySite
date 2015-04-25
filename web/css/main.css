@@ -65,6 +65,15 @@ body > .container {
     margin-bottom: 10px;
 }
 
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    #mediaIndex .media-left {
+        display: block;
+    }
+    #mediaIndex .media-body {
+        width: auto;
+    }
+}
+
 .panel-heading {
     font-size: 20px;
 }
