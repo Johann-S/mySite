@@ -31,6 +31,5 @@
   "requireSpacesInFunctionExpression": { "beforeOpeningCurlyBrace": true },
   "requireSpacesInNamedFunctionExpression": { "beforeOpeningCurlyBrace": true },
   "requireSpacesInsideObjectBrackets": "allButNested",
-  "validateLineBreaks": "CRLF",
   "validateQuoteMarks": "'"
 }
