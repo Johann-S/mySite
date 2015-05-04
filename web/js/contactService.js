@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular.module('mySiteApp').service('contactService', contactService);
@@ -10,7 +10,7 @@
         };
 
         function send(tabVars) {
-            return $http.post(window.location.href,tabVars)
+            return $http.post(window.location.href, tabVars)
                         .then(sendSuccess)
                         .catch(sendError);
 
@@ -29,15 +29,12 @@
             if (!emailRegex.test($scope.email)) {
                 tabErr.push('#formGrpMail');
             }
-
             if ($scope.objet.length === 0) {
                 tabErr.push('#formGrpObjet');
             }
-
             if ($scope.message.length === 0) {
                 tabErr.push('#formGrpMsg');
             }
-
             // Check captcha
             if ($scope.answerCaptcha.length > 0) {
                 var tmpAnswer = parseInt($scope.answerCaptcha);
@@ -63,7 +60,6 @@
             else {
                 tabErr.push('#formGrpCaptcha');
             }
-
             return tabErr;
         }
     }

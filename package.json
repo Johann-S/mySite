@@ -1,0 +1,27 @@
+{
+  "name": "mySite",
+  "version": "1.2.1",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Johann-S/mySite.git"
+  },
+  "author": "Johann-S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johann-S/mySite/issues"
+  },
+  "homepage": "http://www.johann-servoire.fr/",
+  "devDependencies": {
+	"grunt": "~0.4.5",
+	"grunt-contrib-csslint": "~0.4.0",
+	"grunt-contrib-jshint": "~0.11.1",
+	"grunt-contrib-qunit": "~0.7.0",
+	"grunt-jscs": "~1.6.0",
+	"load-grunt-tasks": "~3.1.0"
+  }
+}

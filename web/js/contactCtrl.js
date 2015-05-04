@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular.module('mySiteApp').controller('contactCtrl', contactCtrl);
@@ -14,8 +14,8 @@
         $scope.msgResult = '';
 
         // generate random captcha
-        $scope.generateCaptcha = function() { randomCaptcha(this); };
-        var randomCaptcha = function($scope) {
+        $scope.generateCaptcha = function () { randomCaptcha(this); };
+        var randomCaptcha = function ($scope) {
             var tmpIndex = Math.floor((Math.random() * 3) + 1);
             tmpIndex--;
             $scope.opCap = $scope.tabOp[tmpIndex];
@@ -55,11 +55,11 @@
             contactService.send(tabVars)
             .then(function (response) {
                 var data = response.data;
-                var classResult = (data['message'] && data['message'] === 'OK') ? 'alert-success' : 'alert-danger';
-                scope.msgResult = data['user_msg'];
+                var classResult = (data.message && data.message === 'OK') ? 'alert-success' : 'alert-danger';
+                scope.msgResult = data.userMsg;
                 $('#alertResult').addClass(classResult)
                     .show();
-                if (data['message'] === 'OK') {
+                if (data.message === 'OK') {
                     $('form').remove();
                 }
                 else {
@@ -78,14 +78,16 @@
 
         $scope.addError = function (tabDiv) {
             var nbDiv = tabDiv.length;
-            if (nbDiv === 0 && !angular.isArray(tabDiv)) return;
+            if (nbDiv === 0 && !angular.isArray(tabDiv)) {
+                return;
+            }
             for (var i = 0; i < nbDiv; i++)  {
                 $(tabDiv[i]).addClass('has-error');
             }
         };
 
-        $scope.clearError = function() {
-            $('.form-group').each(function(){
+        $scope.clearError = function () {
+            $('.form-group').each(function () {
                 if ($(this).hasClass('has-error')) {
                     $(this).removeClass('has-error');
                 }

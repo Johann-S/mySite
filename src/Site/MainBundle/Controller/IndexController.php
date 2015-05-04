@@ -57,7 +57,7 @@ class IndexController extends Controller
             $response->headers->set('Content-Type', 'application/json');
             $response->setContent(json_encode(array(
                 'message' => $result,
-                'user_msg' => $message
+                'userMsg' => $message
             )));
             return $response;
         }
