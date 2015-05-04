@@ -1,6 +1,6 @@
-var app = angular.module('mySiteApp', []);
+angular.module('mySiteApp', []);
 
 // Config app to send XMLHttpRequest header
-app.config(['$httpProvider', function($httpProvider) {
+angular.module('mySiteApp').config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
 }]);

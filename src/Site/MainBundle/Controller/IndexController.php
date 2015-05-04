@@ -69,7 +69,10 @@ class IndexController extends Controller
             'urlFr' => $urlFr,
             'urlEn' => $urlEn,
             'locale' => $_locale,
-            'scripts' => array('js/contactCtrl.js')
+            'scripts' => array(
+                'js/contactService.js',
+                'js/contactCtrl.js'
+            )
         ));
     }
 
