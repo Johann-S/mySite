@@ -23,7 +23,6 @@
   "maxdepth": 5,
   "maxstatements": 40,
   "maxlen": 120,
-
   "asi": false,
   "boss": false,
   "debug": false,
@@ -49,9 +48,9 @@
   "supernew": false,
   "validthis": false,
   "noyield": false,
-
   "browser": true,
   "node": true,
+  "jasmine": true,
 
   "globals": {
     "angular": false,

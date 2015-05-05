@@ -1,4 +1,4 @@
-angular.module('mySiteApp', []);
+angular.module('mySiteApp', ['ngMock']);
 
 // Config app to send XMLHttpRequest header
 angular.module('mySiteApp').config(['$httpProvider', function ($httpProvider) {
