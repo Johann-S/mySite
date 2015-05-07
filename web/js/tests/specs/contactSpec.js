@@ -14,4 +14,11 @@ describe('Contact controller', function () {
         expect(scope.fNum > 0).toBe(true);
         expect(scope.sNum > 0).toBe(true);
     });
+
+    it('Generation of captcha should generate numbers and one operator', function () {
+        scope.generateCaptcha();
+        expect(!isNaN(scope.fNum)).toBe(true);
+        expect(!isNaN(scope.sNum)).toBe(true);
+        expect(isNaN(scope.opCap)).toBe(true);
+    });
 });
