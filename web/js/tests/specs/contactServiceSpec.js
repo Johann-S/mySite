@@ -3,10 +3,10 @@ describe('Contact service', function () {
 
     it('Should return an array of ID if they are errors', angular.mock.inject(function (contactService) {
         var $scope = {
-            email: 'sqssdzazeaze',
+            email: 'sqssdzazeaze', // Bad email
             objet: 'object',
             message: 'a message',
-            answerCaptcha: ''
+            answerCaptcha: '' // No answer
         };
         var tabResult = contactService.validateData($scope);
         expect(tabResult.length > 0).toBe(true);

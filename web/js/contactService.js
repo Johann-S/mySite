@@ -11,14 +11,9 @@
 
         function send(tabVars) {
             return $http.post(window.location.href, tabVars)
-                        .then(sendSuccess)
-                        .catch(sendError);
+                        .then(sendResponse).catch(sendResponse);
 
-            function sendSuccess(data) {
-                return data;
-            }
-
-            function sendError(data) {
+            function sendResponse(data) {
                 return data;
             }
         }
