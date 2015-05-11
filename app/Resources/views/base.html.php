@@ -12,7 +12,7 @@
 		<link href="<?php echo $view['assets']->getUrl('css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo $view['assets']->getUrl('css/main.css') ?>" rel="stylesheet" type="text/css" />
 		<?php 
-		if ( isset($styles) && is_array($styles) ) :
+		if (isset($styles) && is_array($styles)) :
 		foreach ( $styles as $css ) : ?>
 		<link href="<?php echo $view['assets']->getUrl($css); ?>" rel="stylesheet" type="text/css" />
 		<?php endforeach; endif; ?>

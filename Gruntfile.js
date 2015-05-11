@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         },
         jasmine: {
             src : [
-                'web/js/mySiteApp.js',
+                'web/js/tests/app.js',
                 'web/js/contactService.js',
                 'web/js/contactCtrl.js'
             ],

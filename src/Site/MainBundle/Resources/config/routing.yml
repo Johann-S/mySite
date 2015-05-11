@@ -1,6 +1,8 @@
 main_homepage:
     path:     /{_locale}
     defaults: { _controller: MainBundle:Index:index, _locale: fr }
+    requirements:
+        _locale: en|fr
 
 skills_page:
     path:     /{_locale}/competences/
