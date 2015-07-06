@@ -12,7 +12,7 @@
             </trans-unit>
             <trans-unit id="3">
                 <source>menu_cv</source>
-                <target>Resume</target>
+                <target>Resumé</target>
             </trans-unit>
             <trans-unit id="4">
                 <source>menu_exp</source>
