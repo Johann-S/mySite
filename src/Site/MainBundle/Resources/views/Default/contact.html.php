@@ -6,7 +6,7 @@
     <div id="alertResult" style="display: none;" class="alert" role="alert">
         <p>{{msgResult}}</p>
     </div>
-    <form class="form-horizontal">
+    <form class="form-horizontal" action="#">
         <fieldset>
             <legend><?php echo $view['translator']->trans('contact_title') ?></legend>
             <div id="formGrpMail" class="form-group">
@@ -33,7 +33,7 @@
                 </label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control" id="inputCaptcha" style="display: inline;width: 80px;" ng-model="answerCaptcha" />
-                    <button class="btn btn-default" ng-click="generateCaptcha()">
+                    <button type="button" class="btn btn-default" ng-click="generateCaptcha()">
                         <span class="glyphicon glyphicon-refresh"></span>
                     </button>
                 </div>
@@ -41,7 +41,7 @@
             <div class="form-group">
                 <label class="col-sm-4 control-label"></label>
                 <div class="col-sm-7">
-                    <button id="btnSend" class="btn btn-primary" ng-click="submitForm($event);">
+                    <button id="btnSend" type="submit" class="btn btn-primary" ng-click="submitForm($event);">
                         <?php echo $view['translator']->trans('contact_send') ?>
                     </button>
                     <i id="loader" style="display:none;" class="fa fa-spinner fa-spin"></i>
