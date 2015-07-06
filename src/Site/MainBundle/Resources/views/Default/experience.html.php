@@ -50,7 +50,7 @@
             </div>
         </div>
         <h4><?php echo $view['translator']->trans('githubContrib') ?></h4>
-        <table id="tableContrib" class="table table-bordered table-hover">
+        <table id="tableContrib" class="table table-bordered">
             <tbody>
                 <?php foreach ($contrib as $repo) : ?>
                 <tr>

@@ -185,6 +185,16 @@ body > .container {
     font-size: 14px;
 }
 
+#tableContrib a {
+    color: #f2aa1a;
+    text-decoration: none;
+}
+
+#tableContrib a:hover {
+    color: #df691a;
+    text-decoration: underline;
+}
+
 /* for mobile device */
 @media screen and (min-width: 200px) and (max-width: 640px) {
     #mediaIndex .media-left {
