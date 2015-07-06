@@ -138,6 +138,10 @@
                 <source>contrib</source>
                 <target>Contributeur</target>
             </trans-unit>
+            <trans-unit id="35">
+                <source>githubContrib</source>
+                <target>Contributions</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -180,6 +180,11 @@ body > .container {
     *border-right-color: #ffffff;
 }
 
+#tableContrib {
+    width: 50%;
+    font-size: 14px;
+}
+
 /* for mobile device */
 @media screen and (min-width: 200px) and (max-width: 640px) {
     #mediaIndex .media-left {
@@ -216,5 +221,9 @@ body > .container {
     #panelSkills > .nav-pills {
         border-bottom: 1px solid #df691a;
         padding-bottom: 10px;
+    }
+
+    #tableContrib {
+        width: 100%;
     }
 }

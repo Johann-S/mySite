@@ -134,6 +134,10 @@
                 <source>contrib</source>
                 <target>Contributor</target>
             </trans-unit>
+            <trans-unit id="35">
+                <source>githubContrib</source>
+                <target>Repositories contributed to</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

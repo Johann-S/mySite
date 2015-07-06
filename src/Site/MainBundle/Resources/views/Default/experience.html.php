@@ -49,6 +49,19 @@
                 </ul>
             </div>
         </div>
+        <h4><?php echo $view['translator']->trans('githubContrib') ?></h4>
+        <table id="tableContrib" class="table table-bordered table-hover">
+            <tbody>
+                <?php foreach ($contrib as $repo) : ?>
+                <tr>
+                    <td>
+                        <a href="<?php echo $repo['link']; ?>"><?php echo $repo['name']; ?></a>
+                    </td>
+                    <td><?php echo $repo['stars']; ?> <span class="fa fa-star"></span></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
 </div>
 <div class="panel panel-default">

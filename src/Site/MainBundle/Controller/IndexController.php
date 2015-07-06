@@ -2,6 +2,7 @@
 
 namespace Site\MainBundle\Controller;
 
+use Site\MainBundle\Utils\GithubUtil;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -32,15 +33,19 @@ class IndexController extends Controller
 
     public function experienceAction($_locale) {
         $buzz = $this->container->get('buzz');
-        $response = $buzz->get('https://api.github.com/users/johann-s',array(
-            'User-Agent: Johann-S'
-        ));
-        $dataResponse = json_decode($response->getContent(),true);
+        $githubUtil = new GithubUtil($buzz);
+        $tabContrib = array();
+        try {
+            $tabContrib = $githubUtil->getContributedRepository();
+        }
+        catch(\Exception $e) {}
+
         $urlFr = $this->generateUrl('experience_page', array('_locale' => 'fr'));
         $urlEn = $this->generateUrl('experience_page', array('_locale' => 'en'));
         return $this->render('MainBundle:Default:experience.html.php',array(
             'activeExp' => true,
-            'response' => $dataResponse,
+            'response' => $githubUtil->getProfilInformation(),
+            'contrib' => $tabContrib,
             'urlFr' => $urlFr,
             'urlEn' => $urlEn,
             'locale' => $_locale
