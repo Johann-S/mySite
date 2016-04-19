@@ -10,7 +10,7 @@
                 <?php echo $view['translator']->trans('home_work') ?> <a href="http://www.interactiv-technologies.fr"/>Interactiv' Technologies</a>
             </p>
             <ul class="list-unstyled" style="font-size: 18px;">
-                <li><b>Age:</b> 25 <?php echo $view['translator']->trans('home_years') ?></li>
+                <li><b>Age:</b> <?php echo $age; ?> <?php echo $view['translator']->trans('home_years') ?></li>
                 <li><b><?php echo $view['translator']->trans('home_location') ?>:</b> Lyon</li>
                 <li><b><?php echo $view['translator']->trans('home_transport') ?>:</b> <?php echo $view['translator']->trans('home_drive') ?></li>
                 <li>

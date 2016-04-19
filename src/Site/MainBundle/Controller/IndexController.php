@@ -12,11 +12,15 @@ class IndexController extends Controller
     public function indexAction($_locale) {
         $urlFr = $this->generateUrl('main_homepage', array('_locale' => 'fr'));
         $urlEn = $this->generateUrl('main_homepage', array('_locale' => 'en'));
+        $today = new \DateTime();
+        $birthday = new \DateTime('1990-02-07');
+        $diff = $today->diff($birthday);
         return $this->render('MainBundle:Default:index.html.php',array(
             'activeIndex' => true,
             'urlFr' => $urlFr,
             'urlEn' => $urlEn,
-            'locale' => $_locale
+            'locale' => $_locale,
+            'age' => $diff->y
         ));
     }
 

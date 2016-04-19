@@ -7,7 +7,7 @@
     <div class="panel-body">
         <ul class="list-unstyled listExp">
             <li>
-                <span class="label label-info expLabel">2012 <i class="fa fa-arrow-right"></i> 2015</span><?php echo $view['translator']->trans('exp_it') ?> <a href="http://www.interactiv-technologies.fr/">Interactiv' Technologies</a>
+                <span class="label label-info expLabel">2012 <i class="fa fa-arrow-right"></i> 2016</span><?php echo $view['translator']->trans('exp_it') ?> <a href="http://www.interactiv-technologies.fr/">Interactiv' Technologies</a>
             </li>
             <li>
                 <span class="label label-info expLabel">2015</span><?php echo $view['translator']->trans('exp_ic') ?> <a href="https://www.imaginecup.com/">ImagineCup</a> <?php echo $view['translator']->trans('exp_ic2') ?> : <a href="http://www.omnitag.fr">http://www.omnitag.fr</a>
