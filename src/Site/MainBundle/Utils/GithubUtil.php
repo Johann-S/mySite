@@ -32,34 +32,27 @@ class GithubUtil {
         $tabUListRepo = array();
         foreach ($tabUl as $ul) {
             $class = $ul->attributes->getNamedItem('class')->nodeValue;
-            if ($class === 'boxed-group-inner mini-repo-list') {
+            if ($class === 'boxed-group-inner mini-repo-list js-pinned-repos-reorder-list') {
                 $tabUListRepo[] = $ul;
             }
         }
 
-        $nbTabUl = count($tabUListRepo);
-        if ($nbTabUl === 0) {
+        if (count($tabUListRepo) === 0) {
             throw new \Exception('List of repository not found');
-        }
-
-        if ($nbTabUl === 2) {
-            unset($tabUListRepo[0]);
-            $tabUListRepo[0] = $tabUListRepo[1];
         }
 
         $uListRepo = $tabUListRepo[0];
         $tabLi = $uListRepo->getElementsByTagName('li');
         $tabRepo = array();
         foreach ($tabLi as $li) {
-            $info = $this->getRepoByLi($li);
-            $tabRepo[] = $info;
+            $tabRepo[] = $this->getRepoByLi($li);
         }
         return $tabRepo;
     }
 
     private function getRepoByLi(\DOMNode $li) {
         $tabLink = $li->getElementsByTagName('a');
-        if ($tabLink->length !== 1) {
+        if ($tabLink->length === 0) {
             throw new \Exception('No link');
         }
         $link = $tabLink->item(0);
@@ -72,11 +65,11 @@ class GithubUtil {
             if ($class === 'owner css-truncate-target') {
                 $owner = $span->nodeValue;
             }
-            if ($class === 'repo') {
+            if ($class === 'repo js-repo') {
                 $repoName = $span->nodeValue;
             }
             if ($class === 'stars') {
-                $nbStars = $span->nodeValue;
+                $nbStars = trim($span->nodeValue);
             }
         }
 
