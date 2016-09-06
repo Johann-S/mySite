@@ -11,7 +11,7 @@
 		<link href="<?php echo $view['assets']->getUrl('css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo $view['assets']->getUrl('css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo $view['assets']->getUrl('css/main.css') ?>" rel="stylesheet" type="text/css" />
-		<?php 
+		<?php
 		if (isset($styles) && is_array($styles)) :
 		foreach ( $styles as $css ) : ?>
 		<link href="<?php echo $view['assets']->getUrl($css); ?>" rel="stylesheet" type="text/css" />
@@ -82,7 +82,7 @@
         </div>
         <div class="footer">
             <div class="container">
-                <p class="text-muted">© 2015 - <a href="http://www.johann-servoire.fr/">SERVOIRE Johann</a> <?php echo $view['translator']->trans('contact_copyright') ?></p>
+                <p class="text-muted">© 2011 - <?php echo date('Y'); ?> - <a href="http://www.johann-servoire.fr/">SERVOIRE Johann</a> <?php echo $view['translator']->trans('contact_copyright') ?></p>
                 <ul id="listSocial" class="list-inline">
                     <li>
                         <a href="https://github.com/Johann-S">
