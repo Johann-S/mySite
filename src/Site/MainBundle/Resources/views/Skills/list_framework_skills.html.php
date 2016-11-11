@@ -36,6 +36,18 @@
         </div>
     </div>
     <div class="form-group">
+        <label class="col-sm-5 control-label" style="text-align: left;">Spring</label>
+        <div class="col-sm-4 col-rating">
+            <span class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
         <label class="col-sm-5 control-label" style="text-align: left;">Qt</label>
         <div class="col-sm-4 col-rating">
             <span class="rating">

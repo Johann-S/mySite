@@ -99,12 +99,12 @@
                 <target>catégorie innovation</target>
             </trans-unit>
             <trans-unit id="25">
-                <source>home_study</source>
-                <target>Etudiant en cinquième année du cycle d'ingénierie à l'EPSI Lyon</target>
+                <source>home_employ</source>
+                <target>Ingénieur concepteur en développement web</target>
             </trans-unit>
             <trans-unit id="26">
                 <source>home_work</source>
-                <target>Développeur Web en alternance pour la société</target>
+                <target>En prestation pour la société</target>
             </trans-unit>
             <trans-unit id="27">
                 <source>home_location</source>
@@ -132,7 +132,7 @@
             </trans-unit>
             <trans-unit id="33">
                 <source>home_goal_text</source>
-                <target>Acquérir de l'expérience en développement, gestion de projet et obtenir mon Master en Ingénierie Informatique</target>
+                <target>Devenir référent technique lors du développement de nouveaux projets</target>
             </trans-unit>
             <trans-unit id="34">
                 <source>contrib</source>
@@ -141,6 +141,10 @@
             <trans-unit id="35">
                 <source>githubContrib</source>
                 <target>Contributions</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>exp_sii</source>
+                <target>Ingénieur concepteur en développement web en prestation chez Carrefour pour la société</target>
             </trans-unit>
         </body>
     </file>

@@ -6,8 +6,8 @@
         </div>
         <div class="media-body">
             <p>
-                <?php echo $view['translator']->trans('home_study') ?><br/>
-                <?php echo $view['translator']->trans('home_work') ?> <a href="http://www.interactiv-technologies.fr"/>Interactiv' Technologies</a>
+                <?php echo $view['translator']->trans('home_employ') ?><br/>
+                <?php echo $view['translator']->trans('home_work') ?> <a href="http://www.carrefour.com"/>Carrefour</a>
             </p>
             <ul class="list-unstyled" style="font-size: 18px;">
                 <li><b>Age:</b> <?php echo $age; ?> <?php echo $view['translator']->trans('home_years') ?></li>

@@ -99,12 +99,12 @@
                 <target>contest (Innovation category)</target>
             </trans-unit>
             <trans-unit id="25">
-                <source>home_study</source>
-                <target>Student in computer engineering at EPSI Lyon</target>
+                <source>home_employ</source>
+                <target>Engineer in web development</target>
             </trans-unit>
             <trans-unit id="26">
                 <source>home_work</source>
-                <target>Web developer at</target>
+                <target>Work as a provider for</target>
             </trans-unit>
             <trans-unit id="27">
                 <source>home_location</source>
@@ -128,7 +128,7 @@
             </trans-unit>
             <trans-unit id="33">
                 <source>home_goal_text</source>
-                <target>Futher my skills and knowledge in development and project management while passing my five-year degree</target>
+                <target>Become a technical referent during the development of new projects</target>
             </trans-unit>
             <trans-unit id="34">
                 <source>contrib</source>
@@ -137,6 +137,10 @@
             <trans-unit id="35">
                 <source>githubContrib</source>
                 <target>Repositories contributed to</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>exp_sii</source>
+                <target>Engineer in web development, work as a provider for Carrefour and employed at</target>
             </trans-unit>
         </body>
     </file>

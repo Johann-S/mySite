@@ -31,7 +31,7 @@ class GithubUtil {
         $tabLi = $dom->getElementsByTagName('li');
         $tabLiListRepo = array();
         foreach ($tabLi as $liNode) {
-            $class = $liNode->attributes->getNamedItem('class')->nodeValue;
+            $class = @$liNode->attributes->getNamedItem('class')->nodeValue;
             if (strpos($class, 'pinned-repo-item') !== false) {
                 $tabLiListRepo[] = $liNode;
             }
