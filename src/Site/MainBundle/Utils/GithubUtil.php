@@ -28,23 +28,21 @@ class GithubUtil {
             throw new \Exception('Unable to load the page');
         }
 
-        $tabUl = $dom->getElementsByTagName('ul');
-        $tabUListRepo = array();
-        foreach ($tabUl as $ul) {
-            $class = $ul->attributes->getNamedItem('class')->nodeValue;
-            if ($class === 'boxed-group-inner mini-repo-list js-pinned-repos-reorder-list') {
-                $tabUListRepo[] = $ul;
+        $tabLi = $dom->getElementsByTagName('li');
+        $tabLiListRepo = array();
+        foreach ($tabLi as $liNode) {
+            $class = $liNode->attributes->getNamedItem('class')->nodeValue;
+            if (strpos($class, 'pinned-repo-item') !== false) {
+                $tabLiListRepo[] = $liNode;
             }
         }
 
-        if (count($tabUListRepo) === 0) {
+        if (count($tabLiListRepo) === 0) {
             throw new \Exception('List of repository not found');
         }
 
-        $uListRepo = $tabUListRepo[0];
-        $tabLi = $uListRepo->getElementsByTagName('li');
         $tabRepo = array();
-        foreach ($tabLi as $li) {
+        foreach ($tabLiListRepo as $li) {
             $tabRepo[] = $this->getRepoByLi($li);
         }
         return $tabRepo;
@@ -62,14 +60,18 @@ class GithubUtil {
         $nbStars = '';
         foreach ($tabSpan as $span) {
             $class = $span->attributes->getNamedItem('class')->nodeValue;
-            if ($class === 'owner css-truncate-target') {
+            if ($class === 'owner text-normal') {
                 $owner = $span->nodeValue;
             }
             if ($class === 'repo js-repo') {
                 $repoName = $span->nodeValue;
             }
-            if ($class === 'stars') {
-                $nbStars = trim($span->nodeValue);
+        }
+        $linkHrefStar = '/' . $owner . '/' . $repoName . '/stargazers';
+        foreach($tabLink as $link) {
+            $tmpHref = $link->attributes->getNamedItem('href')->nodeValue;
+            if ($tmpHref === $linkHrefStar) {
+                $nbStars = trim($link->nodeValue);
             }
         }
 
