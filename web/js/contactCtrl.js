@@ -14,7 +14,6 @@
         $scope.msgResult = '';
 
         // generate random captcha
-        $scope.generateCaptcha = function () { randomCaptcha(this); };
         var randomCaptcha = function ($scope) {
             var tmpIndex = Math.floor((Math.random() * 3) + 1);
             tmpIndex--;
@@ -29,6 +28,7 @@
                 }
             }
         };
+        $scope.generateCaptcha = function () { randomCaptcha(this); };
         randomCaptcha($scope);
 
         $scope.submitForm = function ($e) {

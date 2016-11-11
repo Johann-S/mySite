@@ -16,11 +16,10 @@
   },
   "homepage": "http://www.johann-servoire.fr/",
   "devDependencies": {
-	"grunt": "~0.4.5",
-	"grunt-contrib-csslint": "~0.4.0",
-	"grunt-contrib-jshint": "~0.11.1",
-	"grunt-contrib-jasmine": "~0.8.2",
-	"grunt-jscs": "~1.8.0",
-	"load-grunt-tasks": "~3.2.0"
+	"grunt": "~1.0.1",
+	"grunt-contrib-jshint": "~1.0.0",
+	"grunt-contrib-jasmine": "~1.0.3",
+	"grunt-jscs": "~3.0.1",
+	"load-grunt-tasks": "~3.5.2"
   }
 }

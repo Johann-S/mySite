@@ -25,14 +25,6 @@ module.exports = function (grunt) {
                 src: '<%= jshint.test.src %>'
             }
         },
-        csslint: {
-            options: {
-                csslintrc: 'web/css/.csslintrc'
-            },
-            core: [
-                'web/css/main.css'
-            ]
-        },
         jasmine: {
             src : [
                 'web/js/tests/app.js',
@@ -53,5 +45,5 @@ module.exports = function (grunt) {
 
     // These plugins provide necessary tasks.
     require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
-    grunt.registerTask('default', ['jshint:core', 'jshint:test', 'jscs:core', 'jscs:test', 'csslint:core', 'jasmine']);
+    grunt.registerTask('default', ['jshint:core', 'jshint:test', 'jscs:core', 'jscs:test', 'jasmine']);
 };
