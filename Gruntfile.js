@@ -34,7 +34,7 @@ module.exports = function (grunt) {
             options: {
                 specs : 'web/js/tests/specs/*.js',
                 vendor: [
-                    'web/js/libs/jquery.js',
+                    'web/js/libs/jquery.min.js',
                     'web/js/libs/angular.min.js',
                     'web/js/tests/angular-mocks.js',
                     'web/js/libs/bootstrap.min.js'

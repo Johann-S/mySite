@@ -113,10 +113,10 @@
             </div>
         </div>
 	</body>
-	<script src="<?php echo $view['assets']->getUrl('js/libs/jquery.js'); ?>"></script>
+	<script src="<?php echo $view['assets']->getUrl('js/libs/jquery.min.js'); ?>"></script>
 	<script src="<?php echo $view['assets']->getUrl('js/libs/angular.min.js'); ?>"></script>
-    <script src="<?php echo $view['assets']->getUrl('js/mySiteApp.js'); ?>"></script>
     <script src="<?php echo $view['assets']->getUrl('js/libs/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo $view['assets']->getUrl('js/mySiteApp.js'); ?>"></script>
 	<?php
 	if ( isset($scripts) && is_array($scripts) ) :
 	foreach ( $scripts as $js ) : ?>
