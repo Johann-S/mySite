@@ -20,6 +20,10 @@ experience_page:
     requirements:
         _locale: en|fr
 
+experience_github:
+    path: /experiences/github/
+    defaults: { _controller: MainBundle:Index:experienceGithub }
+
 experience_page_old:
     path: /etudes-et-experiences.html
     defaults: { _controller: MainBundle:Index:experience, _locale: fr }

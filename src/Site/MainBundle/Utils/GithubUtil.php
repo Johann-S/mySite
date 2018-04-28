@@ -14,7 +14,7 @@ class GithubUtil {
     }
 
     public function getProfilInformation() {
-        $response = $this->buzz->get('https://api.github.com/users/johann-s',array(
+        $response = $this->buzz->get('https://api.github.com/users/johann-s', array(
             'User-Agent: Johann-S'
         ));
         $dataResponse = json_decode($response->getContent(),true);

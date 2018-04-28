@@ -36,6 +36,29 @@ class IndexController extends Controller
     }
 
     public function experienceAction($_locale) {
+        $urlFr = $this->generateUrl('experience_page', array('_locale' => 'fr'));
+        $urlEn = $this->generateUrl('experience_page', array('_locale' => 'en'));
+        $urlExperienceGithub = $this->generateUrl('experience_github');
+
+        return $this->render('MainBundle:Default:experience.html.php',array(
+            'activeExp' => true,
+            'urlFr' => $urlFr,
+            'urlEn' => $urlEn,
+            'urlExperienceGithub' => $urlExperienceGithub,
+            'locale' => $_locale,
+            'scripts' => array(
+                'js/experienceGithubCtrl.js'
+            )
+        ));
+    }
+
+    public function experienceGithubAction(Request $request) {
+        $response = new Response();
+        if ($request->isXmlHttpRequest() && $request->getMethod() !== 'GET') {
+            return $response;
+        }
+
+        // array('html_url' => '', 'avatar_url' => '', 'login' => '', 'followers' => '', 'following' => '', 'public_repos' => '')
         $buzz = $this->container->get('buzz');
         $githubUtil = new GithubUtil($buzz);
         $tabContrib = array();
@@ -44,17 +67,12 @@ class IndexController extends Controller
         }
         catch(\Exception $e) {}
 
-        // array('html_url' => '', 'avatar_url' => '', 'login' => '', 'followers' => '', 'following' => '', 'public_repos' => '')
-        $urlFr = $this->generateUrl('experience_page', array('_locale' => 'fr'));
-        $urlEn = $this->generateUrl('experience_page', array('_locale' => 'en'));
-        return $this->render('MainBundle:Default:experience.html.php',array(
-            'activeExp' => true,
+        $response->headers->set('Content-Type', 'application/json');
+        $response->setContent(json_encode(array(
             'response' => $githubUtil->getProfilInformation(),
-            'contrib' => $tabContrib,
-            'urlFr' => $urlFr,
-            'urlEn' => $urlEn,
-            'locale' => $_locale
-        ));
+            'contrib' => $tabContrib
+        )));
+        return $response;
     }
 
     public function contactAction(Request $request, $_locale) {

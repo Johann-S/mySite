@@ -61,50 +61,56 @@
         </ul>
     </div>
 </div>
-<div class="panel panel-default">
+<div class="panel panel-default" ng-controller="experienceGithubCtrl">
     <div class="panel-heading">Github</div>
     <div class="panel-body">
-        <div class="media">
-            <div class="media-left">
-                <a href="<?php echo $response['html_url']; ?>">
-                    <img id="githubAvatar" class="media-object" src="<?php echo $response['avatar_url']; ?>" />
-                </a>
-            </div>
-            <div class="media-body">
-                <h4 class="media-heading">
-                    <a href="<?php echo $response['html_url']; ?>">
-                        <?php echo $response['login']; ?>
-                    </a>
-                </h4>
-                <ul id="listGithub" class="list-inline">
-                    <li>
-                        <h4><?php echo $response['followers']; ?></h4>
-                        Followers
-                    </li>
-                    <li>
-                        <h4><?php echo $response['following']; ?></h4>
-                        Following
-                    </li>
-                    <li>
-                        <h4><?php echo $response['public_repos']; ?></h4>
-                        Repository
-                    </li>
-                </ul>
-            </div>
+        <div ng-if="error" class="alert alert-danger" role="alert">
+            <p><?php echo $view['translator']->trans('contact_msgResultFail') ?></p>
         </div>
-        <h4><?php echo $view['translator']->trans('githubContrib') ?></h4>
-        <table id="tableContrib" class="table table-bordered">
-            <tbody>
-                <?php foreach ($contrib as $repo) : ?>
-                <tr>
-                    <td>
-                        <a href="<?php echo $repo['link']; ?>"><?php echo $repo['name']; ?></a>
-                    </td>
-                    <td><?php echo $repo['stars']; ?> <span class="fa fa-star"></span></td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+        <div ng-if="loading">
+            <span class="fa fa-refresh fa-2x fa-spin"></span>
+        </div>
+        <div ng-if="!loading && !error">
+            <div class="media">
+                <div class="media-left">
+                    <a href="{{ htmlUrl }}">
+                        <img id="githubAvatar" class="media-object" src="{{ avatarUrl }}" />
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <a href="{{ htmlUrl }}">{{ login }}</a>
+                    </h4>
+                    <ul id="listGithub" class="list-inline">
+                        <li>
+                            <h4>{{ followers }}</h4>
+                            Followers
+                        </li>
+                        <li>
+                            <h4>{{ following }}</h4>
+                            Following
+                        </li>
+                        <li>
+                            <h4>{{ publicRepos }}</h4>
+                            Repository
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h4><?php echo $view['translator']->trans('githubContrib') ?></h4>
+            <table id="tableContrib" class="table table-bordered">
+                <tbody>
+                    <tr ng-repeat="contrib in contribList">
+                        <td>
+                            <a href="{{ contrib.link }}">{{ contrib.name }}</a>
+                        </td>
+                        <td>
+                            {{ contrib.stars }} <span class="fa fa-star"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 <div class="panel panel-default">
@@ -126,3 +132,6 @@
         </ul>
     </div>
 </div>
+<script>
+    window.urlExperienceGithub = '<?php echo $urlExperienceGithub ?>';
+</script>
