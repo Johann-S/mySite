@@ -1,9 +1,10 @@
 {
-  "name": "mySite",
+  "name": "my-site",
   "version": "1.2.1",
   "description": "My personal website",
   "scripts": {
-    "test": "grunt default"
+    "test": "grunt default",
+	  "serve": "php -S localhost:3000 -t web"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,10 @@
   },
   "homepage": "http://www.johann-servoire.fr/",
   "devDependencies": {
-	"grunt": "~1.0.1",
-	"grunt-contrib-jshint": "~1.0.0",
-	"grunt-contrib-jasmine": "~1.0.3",
-	"grunt-jscs": "~3.0.1",
-	"load-grunt-tasks": "~3.5.2"
+    "grunt": "~1.0.1",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-jasmine": "~1.0.3",
+    "grunt-jscs": "~3.0.1",
+    "load-grunt-tasks": "~3.5.2"
   }
 }

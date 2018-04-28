@@ -44,6 +44,7 @@ class IndexController extends Controller
         }
         catch(\Exception $e) {}
 
+        // array('html_url' => '', 'avatar_url' => '', 'login' => '', 'followers' => '', 'following' => '', 'public_repos' => '')
         $urlFr = $this->generateUrl('experience_page', array('_locale' => 'fr'));
         $urlEn = $this->generateUrl('experience_page', array('_locale' => 'en'));
         return $this->render('MainBundle:Default:experience.html.php',array(

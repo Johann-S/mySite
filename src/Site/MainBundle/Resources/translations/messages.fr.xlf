@@ -87,64 +87,68 @@
                 <target>Développeur Web pour la société</target>
             </trans-unit>
             <trans-unit id="22">
-                <source>exp_alchi</source>
-                <target>Stage de Développement web (6 semaines) pour l'entreprise</target>
-            </trans-unit>
-            <trans-unit id="23">
                 <source>exp_ic</source>
                 <target>Arrivé troisième de la finale nationale de l'</target>
             </trans-unit>
-            <trans-unit id="24">
+            <trans-unit id="23">
                 <source>exp_ic2</source>
                 <target>catégorie innovation</target>
             </trans-unit>
-            <trans-unit id="25">
+            <trans-unit id="24">
                 <source>home_employ</source>
-                <target>Ingénieur concepteur en développement web</target>
+                <target>Développeur Angular</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>home_work</source>
+                <target>pour la société</target>
             </trans-unit>
             <trans-unit id="26">
-                <source>home_work</source>
-                <target>En prestation pour la société</target>
-            </trans-unit>
-            <trans-unit id="27">
                 <source>home_location</source>
                 <target>Lieu de résidence</target>
             </trans-unit>
-            <trans-unit id="28">
+            <trans-unit id="27">
                 <source>home_goal</source>
                 <target>Mon ambition</target>
             </trans-unit>
-            <trans-unit id="29">
+            <trans-unit id="28">
                 <source>home_transport</source>
                 <target>Moyen de locomotion</target>
             </trans-unit>
+            <trans-unit id="29">
+                <source>home_years</source>
+                <target>ans</target>
+            </trans-unit>
             <trans-unit id="30">
-                <source>home_years</source>
-                <target>ans</target>
-            </trans-unit>
-            <trans-unit id="31">
-                <source>home_years</source>
-                <target>ans</target>
-            </trans-unit>
-            <trans-unit id="32">
                 <source>home_drive</source>
                 <target>Permis B et véhiculé</target>
             </trans-unit>
-            <trans-unit id="33">
+            <trans-unit id="31">
                 <source>home_goal_text</source>
                 <target>Devenir référent technique lors du développement de nouveaux projets</target>
             </trans-unit>
-            <trans-unit id="34">
-                <source>contrib</source>
-                <target>Contributeur</target>
+            <trans-unit id="32">
+                <source>dev</source>
+                <target>Développeur</target>
             </trans-unit>
-            <trans-unit id="35">
+            <trans-unit id="33">
                 <source>githubContrib</source>
                 <target>Contributions</target>
             </trans-unit>
-            <trans-unit id="36">
+            <trans-unit id="34">
                 <source>exp_sii</source>
-                <target>Ingénieur concepteur en développement web en prestation chez Carrefour pour la société</target>
+                <target>Ingénieur concepteur en développement web pour la société</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>exp_ldlc</source>
+                <target>Développeur Angular pour la société</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>mission_sii_carrefour</source>
+                <target>Développement de la suite logistique CARLA</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>mission_sii_orange</source>
+                <target>Développement d'un logiciel de gestion d'accès pour Orange</target>
             </trans-unit>
         </body>
     </file>

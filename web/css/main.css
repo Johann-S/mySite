@@ -75,7 +75,7 @@ body > .container {
 }
 
 .listExp > li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .fa-star,
@@ -193,6 +193,14 @@ body > .container {
 #tableContrib a:hover {
     color: #df691a;
     text-decoration: underline;
+}
+
+.text-align-left {
+    text-align: left !important;
+}
+
+.pl-0 {
+    padding-left: 0;
 }
 
 /* for mobile device */

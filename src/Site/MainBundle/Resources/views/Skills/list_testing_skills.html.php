@@ -1,6 +1,6 @@
 <div class="form-horizontal">
     <div class="form-group">
-        <label class="col-sm-3 control-label" style="text-align: left;">PHPStorm</label>
+        <label class="col-sm-3 control-label text-align-left">QUnit</label>
         <div class="col-sm-2 col-rating">
             <span class="rating">
                 <span class="fa fa-star"></span>
@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label" style="text-align: left;">IntelliJ</label>
+        <label class="col-sm-3 control-label text-align-left">Jasmine</label>
         <div class="col-sm-2 col-rating">
             <span class="rating">
                 <span class="fa fa-star"></span>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label" style="text-align: left;">Eclipse</label>
+        <label class="col-sm-3 control-label text-align-left">Jest</label>
         <div class="col-sm-2 col-rating">
             <span class="rating">
                 <span class="fa fa-star"></span>
@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label" style="text-align: left;">Android Studio</label>
+        <label class="col-sm-3 control-label text-align-left">PHPUnit</label>
         <div class="col-sm-2 col-rating">
             <span class="rating">
                 <span class="fa fa-star"></span>
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-3 control-label" style="text-align: left;">Visual Studio 2013</label>
+        <label class="col-sm-3 control-label text-align-left">JUnit</label>
         <div class="col-sm-2 col-rating">
             <span class="rating">
                 <span class="fa fa-star"></span>

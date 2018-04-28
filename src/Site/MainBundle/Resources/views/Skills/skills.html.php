@@ -15,7 +15,7 @@
                 <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabFram">Frameworks / Libs</a>
             </li>
             <li role="presentation">
-                <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabIde">IDE</a>
+                <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabIde">Testing</a>
             </li>
             <li role="presentation">
                 <a aria-controls="profile" data-toggle="tab" role="tab" href="#tabOS">OS</a>
@@ -37,7 +37,7 @@
                 <?php echo $view->render('MainBundle:Skills:list_framework_skills.html.php'); ?>
             </div>
             <div aria-labelledby="dropdown1-tab" id="tabIde" class="tab-pane fade" role="tabpanel">
-                <?php echo $view->render('MainBundle:Skills:list_ide_skills.html.php'); ?>
+                <?php echo $view->render('MainBundle:Skills:list_testing_skills.html.php'); ?>
             </div>
             <div aria-labelledby="dropdown2-tab" id="tabOS" class="tab-pane fade" role="tabpanel">
                 <?php echo $view->render('MainBundle:Skills:list_os_skills.html.php'); ?>
