@@ -96,7 +96,7 @@
             </trans-unit>
             <trans-unit id="24">
                 <source>home_employ</source>
-                <target>Angular developer</target>
+                <target>Angular/NodeJS developer</target>
             </trans-unit>
             <trans-unit id="25">
                 <source>home_work</source>
@@ -140,7 +140,7 @@
             </trans-unit>
             <trans-unit id="35">
                 <source>exp_ldlc</source>
-                <target>Angular developer, employed at</target>
+                <target>Angular/NodeJS developer, employed at</target>
             </trans-unit>
             <trans-unit id="36">
                 <source>mission_sii_carrefour</source>
@@ -149,6 +149,14 @@
             <trans-unit id="37">
                 <source>mission_sii_orange</source>
                 <target>Worked on a software to manage room access for Orange</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>patreon_link</source>
+                <target>Became my patron</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>meta_description</source>
+                <target>Developer Angular/NodeJS, Mentor OpenClassRoom and Open Source lover</target>
             </trans-unit>
         </body>
     </file>

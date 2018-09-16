@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php $view['slots']->output('title', 'Johann SERVOIRE') ?></title>
-		<meta name="description" content="">
+		<meta name="description" content="<?php echo $view['translator']->trans('meta_description') ?>">
 		<meta name="author" content="Johann SERVOIRE">
 
 		<link href="<?php echo $view['assets']->getUrl('css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
@@ -60,6 +60,11 @@
                         </li>
                         <li <?php if (isset($activeContact)) : ?>class="active"<?php endif; ?>>
                             <a href="<?php echo $view['router']->generate('contact_page'); ?>">Contact</a>
+                        </li>
+                        <li class="patreon">
+                            <a href="https://www.patreon.com/jservoire">
+                                <?php echo $view['translator']->trans('patreon_link') ?>
+                            </a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
