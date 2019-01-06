@@ -1,0 +1,21 @@
+.navbar-shadow {
+  box-shadow: 0 2px 0 0 #f5f5f5;
+}
+
+.navbar-nav .nav-link {
+  color: #7a7a7a;
+}
+
+.nav-item {
+  border-bottom: 1px solid transparent;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  border-bottom-color: #3273dc;
+}
+
+.nav-item.active > .nav-link,
+.nav-item:hover > .nav-link {
+  color: #3273dc;
+}
