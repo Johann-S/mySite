@@ -10,7 +10,7 @@ export default class Navbar extends React.Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-shadow pb-0">
         <div className="navbar-brand">Johann SERVOIRE</div>
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav ml-auto">
           <NavbarItem text="Home"
                       pathName={this.props.location.pathname}
                       link="/"></NavbarItem>
