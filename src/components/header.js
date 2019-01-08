@@ -4,9 +4,6 @@ import { Helmet } from 'react-helmet'
 /** Components */
 import Navbar from '../components/navbar'
 
-/** Styles */
-import '../css/main.css'
-
 const defaultTitle = 'Johann SERVOIRE'
 const defaultDescription = 'Web developer and open-sourcerer'
 
