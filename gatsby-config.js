@@ -12,5 +12,11 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography.js',
       },
     },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        purgeOnly : [ 'src/' ], // Purge only these files/folders
+      }
+    }
   ]
 }
