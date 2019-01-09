@@ -7,15 +7,9 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: 'gatsby-plugin-purgecss',
       options: {
-        pathToConfigModule: 'src/utils/typography.js',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        purgeOnly : [ 'src/' ], // Purge only these files/folders
+        ignore: ['src/css/']
       }
     }
   ]
