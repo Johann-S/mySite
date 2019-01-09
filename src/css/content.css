@@ -1,0 +1,27 @@
+.h-85 {
+  height: 85% !important;
+}
+
+@media (min-width: 576px) {
+  .content {
+    align-items: inherit !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    align-items: inherit !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    align-items: center !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    align-items: center !important;
+  }
+}

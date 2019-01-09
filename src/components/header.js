@@ -22,7 +22,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="mb-2">
         <Helmet>
           <html className="h-100" />
           <title>{this.title}</title>
