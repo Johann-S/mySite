@@ -9,7 +9,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
-        ignore: ['src/css/']
+        ignore: ['src/css/'],
+        whitelist: [
+          'collapsing' ,
+          'fade',
+          'collapse'
+        ]
       }
     }
   ]
