@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "boxicons": "^1.8.1",
     "gatsby": "^2.0.76",
     "gatsby-plugin-react-helmet": "^3.0.5",
     "jquery": "^3.3.1",

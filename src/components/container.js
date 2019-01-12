@@ -1,7 +1,7 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
 
 /** Styles */
+import 'bootstrap/dist/css/bootstrap.css'
 import '../css/main.css'
 
 export default ({ children }) => (

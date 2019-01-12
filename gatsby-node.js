@@ -7,6 +7,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
             test: /bootstrap/, // fix bootstrap import during the build
             use: loaders.null(),
           },
+          {
+            test: /boxicons/, // fix boxicons import during the build
+            use: loaders.null(),
+          },
         ],
       },
     })
