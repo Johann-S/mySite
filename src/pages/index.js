@@ -40,6 +40,13 @@ export default ({ location }) => {
                 size="md"></box-icon>
                 <span className="ml-2">Tweets</span>
             </a>
+            <a className="btn btn-light pb-0" href="https://www.linkedin.com/in/johann-servoire-5896b063/" role="button">
+              <box-icon
+                type="logo"
+                name="linkedin"
+                size="md"></box-icon>
+                <span className="ml-2">Resume</span>
+            </a>
           </p>
         </div>
       </Content>
