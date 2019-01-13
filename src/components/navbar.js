@@ -23,12 +23,9 @@ export default class Navbar extends React.Component {
             <NavbarItem text="Projects"
                         pathName={this.props.location.pathname}
                         link="/projects"></NavbarItem>
-            <NavbarItem text="Donate"
+            <NavbarItem text="Experiences"
                         pathName={this.props.location.pathname}
-                        link="/donate"></NavbarItem>
-            <NavbarItem text="About"
-                        pathName={this.props.location.pathname}
-                        link="/about"></NavbarItem>
+                        link="/experiences"></NavbarItem>
             <NavbarItem text="Contact"
                         pathName={this.props.location.pathname}
                         link="/contact"></NavbarItem>
