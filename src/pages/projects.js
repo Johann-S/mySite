@@ -54,8 +54,11 @@ export default ({ location }) => {
                         size="md"></box-icon>
             </h2>
             <div className="col-12">
-              <p>You can read more about me and my open source work on my <a className="text-decoration-none" href="https://www.patreon.com/jservoire">Patreon page</a>.</p>
-              <p>You can make donations here:</p>
+              <p>
+                <span>You can read more about me and my open source work on my <a className="text-decoration-none" href="https://www.patreon.com/jservoire">Patreon page</a></span>
+                <span> or you can <a href="https://gitstalk.netlify.com/johann-s">stalk me</a>.</span>
+              </p>
+              <p>If you want to support my work you can make donations here:</p>
               <ul>
                 <li>
                   <a href="https://www.patreon.com/jservoire">Patreon</a>
