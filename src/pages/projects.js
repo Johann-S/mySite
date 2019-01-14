@@ -15,7 +15,7 @@ export default ({ location }) => {
       <Header location={location}
               title="Projects"></Header>
       <Content>
-        <div className="container mt-5">
+        <div className="container">
           <h1>Projects and plugins</h1>
           <div className="row mt-5">
             <div className="col-6">
