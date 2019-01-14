@@ -10,7 +10,7 @@ import NavbarItem from './navbar-item'
 export default class Navbar extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-shadow pb-0">
+      <nav className="navbar navbar-expand-md navbar-shadow pb-0">
         <div className="navbar-brand">Johann SERVOIRE</div>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
           <span className="navbar-toggler-icon"></span>
