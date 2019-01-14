@@ -16,6 +16,12 @@ module.exports = {
           'collapse'
         ]
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-25767197-1',
+      },
+    },
   ]
 }
