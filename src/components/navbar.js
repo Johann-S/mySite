@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import 'bootstrap/js/dist/collapse'
+import 'boxicons'
 
 /** Styles */
 import '../css/navbar.css'
@@ -8,10 +10,24 @@ import '../css/navbar.css'
 import NavbarItem from './navbar-item'
 
 export default class Navbar extends React.Component {
+  home() {
+    if (this.props.location.pathname === '/') {
+      return (<span>Johann SERVOIRE</span>)
+    } else {
+      return (
+        <Link to="/">
+          <box-icon type="regular"
+                    animation="tada-hover"
+                    name="home"></box-icon>
+        </Link>
+      )
+    }
+  }
+
   render() {
     return (
       <nav className="navbar navbar-expand-md navbar-shadow pb-0">
-        <div className="navbar-brand">Johann SERVOIRE</div>
+        <div className="navbar-brand">{this.home()}</div>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
           <span className="navbar-toggler-icon"></span>
         </button>
