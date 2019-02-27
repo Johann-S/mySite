@@ -25,7 +25,7 @@ export default ({ location }) => {
           <ul>
             <li>Built a web app with <a href="https://angular.io/">Angular</a> 6 for LDLC shops to sell and manage their stock</li>
             <li>Developed an hybrid mobile app on Android and iOS with <a href="https://ionicframework.com/">Ionic</a> to allow shops to do an inventory of their shop's stock</li>
-            <li>Embedded a web app inside a software thanks to <a href="https://electronjs.org/">Electron</a> to allow this web app to comunicate with a payment terminal</li>
+            <li>Embedded a web app inside a software thanks to <a href="https://electronjs.org/">Electron</a> to allow this web app to communicate with a payment terminal</li>
             <li>Participate on improving LDLC APIs on PHP 7 with <a href="https://symfony.com/">Symfony 4</a></li>
           </ul>
         </div>

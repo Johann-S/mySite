@@ -6,6 +6,9 @@ import Container from '../components/container'
 import Content from '../components/content'
 import Header from '../components/header'
 
+/** Styles */
+import '../css/services.css'
+
 export default ({ location }) => {
   return (
     <Container>
@@ -31,13 +34,22 @@ export default ({ location }) => {
             <li>What's the best technology for my project ?</li>
             <li>What's technology suits the best for my team ?</li>
           </ul>
-          <p>I'm here to provide an answer to those questions, or if you have a lack of manpower.</p>
+          <p>I'm here to provide an answer to those questions as an IT consultant.</p>
         </div>
         <div className="mt-4">
           <h2>Training</h2>
-          <p></p>
+          <p>
+            Sometimes you or your team have a lack of knowledge or you want to learn new things (framework, languages etc...),
+            I can provide training on remote or if you're an company directly at your office.
+          </p>
+          <p>Some examples :</p>
+          <ul>
+            <li>Writing <strong>unit tests</strong> with Jasmine/QUnit/PHPUnit</li>
+            <li>Learning a new framework <strong>Angular</strong> or <strong>React</strong></li>
+            <li>How to write an <strong>API</strong> in Node.js</li>
+          </ul>
         </div>
-        <p className="text-center">Interested by something, or if you have any questions do not hesite to <Link to="/contact">contact</Link> me, we will speak about your projects.</p>
+        <p className="text-center mt-5 p-contact">Interested by something, or if you have any questions do not hesite to <Link to="/contact">contact</Link> me, we will speak about your projects.</p>
       </Content>
     </Container>
   )

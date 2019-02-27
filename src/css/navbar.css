@@ -1,9 +1,9 @@
 .navbar-shadow {
-  box-shadow: 0 2px 0 0 #f5f5f5;
+  box-shadow: 0 2px 0 0 var(--light);
 }
 
 .navbar-nav .nav-link {
-  color: #7a7a7a;
+  color: var(--grey);
 }
 
 .nav-item {
@@ -12,12 +12,12 @@
 
 .nav-item.active,
 .nav-item:hover {
-  border-bottom-color: #3273dc;
+  border-bottom-color: var(--blue);
 }
 
 .nav-item.active > .nav-link,
 .nav-item:hover > .nav-link {
-  color: #3273dc;
+  color: var(--blue);
 }
 
 .navbar-shadow .navbar-toggler-icon {
