@@ -23,10 +23,10 @@ export default ({ location }) => {
           <h3 className="mt-3">
             Lead developer in Angular/React and NodeJS at <a className="text-decoration-none" href="https://www.groupe-ldlc.com/">LDLC</a>
           </h3>
-          <h4 className="mt-3">JavaScript developer of <a className="text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a></h4>
+          <h4 className="mt-3">JavaScript developer at <a className="text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a></h4>
           <h4 className="mt-3">Mentor at <a className="text-decoration-none" href="https://openclassrooms.com/">OpenClassRooms</a></h4>
           <p className="mt-3">I build a lot of plugins, CLI tools and app during my free time. Mostly on JavaScript.</p>
-          <p className="mt-3">Interested by my knowledge and skills, maybe we can work <Link to="/services">together</Link> !</p>
+          <p className="mt-3">Interested by my knowledge and skills? Maybe we can work <Link to="/services">together</Link>!</p>
           <p className="mt-3">
             <a className="btn btn-light pb-0" href="https://github.com/Johann-S" role="button">
               <box-icon

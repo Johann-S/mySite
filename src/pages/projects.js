@@ -22,7 +22,7 @@ export default ({ location }) => {
               <h4>
                 <a className="text-decoration-none" href="https://www.npmjs.com/package/bs-custom-file-input">bs-custom-file-input</a>
               </h4>
-              <p>Plugin to dynamize Bootstrap 4 custom file input</p>
+              <p>Plugin to make Bootstrap's 4 custom file input dynamic</p>
             </div>
             <div className="col-6">
               <h4>
@@ -36,7 +36,7 @@ export default ({ location }) => {
               <h4>
                 <a className="text-decoration-none" href="https://www.npmjs.com/package/bs-breakpoints">bs-breakpoints</a>
               </h4>
-              <p>A plugin which detect Bootstrap 4 breakpoints and emit when there is a change</p>
+              <p>A plugin which detects Bootstrap 4 breakpoints and emits an event when there's a breakpoint change</p>
             </div>
             <div className="col-6">
               <h4>
@@ -55,7 +55,7 @@ export default ({ location }) => {
             </h2>
             <div className="col-12">
               <p>
-                <span>You can read more about me and my open source work on my <a className="text-decoration-none" href="https://www.patreon.com/jservoire">Patreon page</a></span>
+                <span>You can read more about me and my open-source work on my <a className="text-decoration-none" href="https://www.patreon.com/jservoire">Patreon page</a></span>
                 <span> or you can <a href="https://gitstalk.netlify.com/johann-s">stalk me</a>.</span>
               </p>
               <p>If you want to support my work you can make donations here:</p>
