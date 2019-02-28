@@ -15,7 +15,7 @@ export default ({ location }) => {
           <h2>I think you're lost...</h2>
           <p>Come <Link to="/" className="text-decoration-none">home</Link></p>
           <div className="embed-responsive embed-responsive-16by9">
-            <iframe title="One Republic - Come home" className="embed-responsive-item" src="https://www.youtube.com/embed/FV76H3rgkeU" allowfullscreen></iframe>
+            <iframe title="One Republic - Come home" className="embed-responsive-item" src="https://www.youtube.com/embed/FV76H3rgkeU" allowFullScreen></iframe>
           </div>
         </div>
       </Content>
