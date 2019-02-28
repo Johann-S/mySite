@@ -15,7 +15,7 @@ export default ({ location }) => {
               title="Contact"></Header>
       <Content>
         <h1>Contact</h1>
-        <p>If you want to contact me about job offers, projects or questions</p>
+        <p>If you want to contact me about job offers, projects or any questions, drop me an email.</p>
         <hr></hr>
         <p className="text-center p-email">
           <a className="text-decoration-none" href="mailto:johann.servoire@gmail.com">johann.servoire@gmail.com</a>
