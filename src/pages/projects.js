@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 import 'boxicons'
 
 /** Components */
@@ -13,22 +14,26 @@ export default ({ location }) => {
   return (
     <Container>
       <Header location={location}
-              title="Projects"></Header>
+              title="projects.title"></Header>
       <Content>
         <div className="container">
-          <h1>Projects and plugins</h1>
+          <h1><FormattedMessage id="projects.subTitle" /></h1>
           <div className="row mt-5">
             <div className="col-6">
               <h4>
                 <a className="text-decoration-none" href="https://www.npmjs.com/package/bs-custom-file-input">bs-custom-file-input</a>
               </h4>
-              <p>Plugin to make Bootstrap's 4 custom file input dynamic</p>
+              <FormattedMessage id="projects.bsCustomFileInput">
+                {(txt) => (<p>{txt}</p>)}
+              </FormattedMessage>
             </div>
             <div className="col-6">
               <h4>
                 <a className="text-decoration-none" href="https://www.npmjs.com/package/bs-stepper">bs-stepper</a>
               </h4>
-              <p>Stepper component for Bootstrap 4</p>
+              <FormattedMessage id="projects.bsStepper">
+                {(txt) => (<p>{txt}</p>)}
+              </FormattedMessage>
             </div>
           </div>
           <div className="row">
@@ -36,29 +41,45 @@ export default ({ location }) => {
               <h4>
                 <a className="text-decoration-none" href="https://www.npmjs.com/package/bs-breakpoints">bs-breakpoints</a>
               </h4>
-              <p>A plugin which detects Bootstrap 4 breakpoints and emits an event when there's a breakpoint change</p>
+              <FormattedMessage id="projects.bsBreakpoints">
+                {(txt) => (<p>{txt}</p>)}
+              </FormattedMessage>
             </div>
             <div className="col-6">
               <h4>
                 <a className="text-decoration-none" href="https://johann-s.github.io/bs-customizer/">bs-customizer</a>
               </h4>
-              <p>Create a custom Bootstrap 4.x build by choosing the components and JavaScript plugins you need</p>
+              <FormattedMessage id="projects.bsCustomizer">
+                {(txt) => (<p>{txt}</p>)}
+              </FormattedMessage>
             </div>
           </div>
           <div className="row mt-5">
             <h2>
-              <span className="mr-2">Donate</span>
+              <FormattedMessage id="projects.supportWork">
+                {(txt) => (<span className="mr-2">{txt}</span>)}
+              </FormattedMessage>
               <box-icon type="solid"
                         name="heart"
                         color="red"
                         size="md"></box-icon>
             </h2>
-            <div className="col-12">
+            <div className="pl-0 col-12">
               <p>
-                <span>You can read more about me and my open-source work on my <a className="text-decoration-none" href="https://www.patreon.com/jservoire">Patreon page</a></span>
-                <span> or you can <a href="https://gitstalk.netlify.com/johann-s">stalk me</a>.</span>
+                <span>
+                  <FormattedMessage id="projects.supportWorkInfo" />
+                  <a className="text-decoration-none" href="https://www.patreon.com/jservoire">
+                    <FormattedMessage id="projects.patreonPage" />
+                  </a>
+                </span>
+                <FormattedMessage id="projects.orYouStalk" />
+                <a href="https://gitstalk.netlify.com/johann-s">
+                  <FormattedMessage id="projects.stalk" />
+                </a>.
               </p>
-              <p>If you want to support my work you can make donations here:</p>
+              <FormattedMessage id="projects.donation">
+                {(txt) => (<p>{txt}:</p>)}
+              </FormattedMessage>
               <ul>
                 <li>
                   <a href="https://www.patreon.com/jservoire">Patreon</a>

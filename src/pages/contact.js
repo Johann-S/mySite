@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
 /** Components */
 import Container from '../components/container'
@@ -15,7 +16,9 @@ export default ({ location }) => {
               title="Contact"></Header>
       <Content>
         <h1>Contact</h1>
-        <p>If you want to contact me about job offers, projects or any questions, drop me an email.</p>
+        <FormattedMessage id="contact.info">
+          {(txt) => (<p>{txt}</p>)}
+        </FormattedMessage>
         <hr></hr>
         <p className="text-center p-email">
           <a className="text-decoration-none" href="mailto:johann.servoire@gmail.com">johann.servoire@gmail.com</a>

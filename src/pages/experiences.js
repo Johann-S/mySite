@@ -1,4 +1,5 @@
 import React from 'react'
+import { injectIntl } from 'gatsby-plugin-intl'
 import 'boxicons'
 
 /** Components */
@@ -6,13 +7,13 @@ import Container from '../components/container'
 import Content from '../components/content'
 import Header from '../components/header'
 
-export default ({ location }) => {
+const Experiences = ({ intl, location }) => {
   return (
     <Container>
       <Header location={location}
-              title="Experiences"></Header>
+              title={intl.formatMessage({ id: 'navbar.experiences' })}></Header>
       <Content>
-        <h1 className="mb-3">Experiences</h1>
+        <h1 className="mb-3">{intl.formatMessage({ id: 'navbar.experiences' })}</h1>
         <div className="mb-2">
           <p>
             <span className="badge badge-info mr-2">
@@ -63,3 +64,5 @@ export default ({ location }) => {
     </Container>
   )
 }
+
+export default injectIntl(Experiences)

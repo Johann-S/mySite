@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { injectIntl, FormattedMessage, Link } from 'gatsby-plugin-intl'
 import 'boxicons'
 
 /** Components */
@@ -13,20 +13,32 @@ import profil from '../images/profil.jpg'
 /** Styles */
 import '../css/index.css';
 
-export default ({ location }) => {
+const Index = ({ location, intl }) => {
   return (
     <Container>
       <Header location={location}></Header>
       <Content>
         <div className="text-center">
-          <img src={profil} className="rounded mx-auto" width="200" alt="my face" />
+          <img src={profil} className="rounded mx-auto" width="200" alt={intl.formatMessage({ id: 'index.alt.pic' })} />
           <h3 className="mt-3">
-            Lead developer in Angular/React and NodeJS at <a className="text-decoration-none" href="https://www.groupe-ldlc.com/">LDLC</a>
+            <FormattedMessage id="index.currentJob" />
+            <a className="text-decoration-none" href="https://www.groupe-ldlc.com/">LDLC</a>
           </h3>
-          <h4 className="mt-3">JavaScript developer at <a className="text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a></h4>
-          <h4 className="mt-3">Mentor at <a className="text-decoration-none" href="https://openclassrooms.com/">OpenClassRooms</a></h4>
-          <p className="mt-3">I build a lot of plugins, CLI tools and app during my free time. Mostly on JavaScript.</p>
-          <p className="mt-3">Interested by my knowledge and skills? Maybe we can work <Link to="/services">together</Link>!</p>
+          <h4 className="mt-3">
+            <FormattedMessage id="index.bootstrap" />
+            <a className="text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a>
+            </h4>
+          <h4 className="mt-3">
+            <FormattedMessage id="index.mentor" />
+            <a className="text-decoration-none" href="https://openclassrooms.com/">OpenClassRooms</a>
+          </h4>
+          <p className="mt-3">
+            <FormattedMessage id="index.activities" />
+          </p>
+          <p className="mt-3">
+            <FormattedMessage id="index.interested" />
+            <Link to="/services"><FormattedMessage id="index.together" /></Link>!
+          </p>
           <p className="mt-3">
             <a className="btn btn-light pb-0" href="https://github.com/Johann-S" role="button">
               <box-icon
@@ -47,7 +59,7 @@ export default ({ location }) => {
                 type="logo"
                 name="linkedin"
                 size="md"></box-icon>
-                <span className="ml-2">Resume</span>
+                <span className="ml-2"><FormattedMessage id="index.resume" /></span>
             </a>
           </p>
         </div>
@@ -55,3 +67,5 @@ export default ({ location }) => {
     </Container>
   )
 }
+
+export default injectIntl(Index)

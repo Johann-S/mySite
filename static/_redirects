@@ -1,8 +1,4 @@
 # Netlify redirect olds URL
 /fr/competences/  / 301
 /en/competences/  / 301
-/fr/experiences/  /experiences 301
-/en/experiences/  /experiences 301
-/fr/contact/  /contact 301
-/en/contact/  /contact 301
 /cv/CV.pdf  / 301

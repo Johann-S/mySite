@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-intl'
+
+import { getCurrentLocal } from '../util'
 
 const defaultClasses = 'nav-item mb-0 mr-3'
 
 export default class NavbarItem extends React.Component {
   get classes() {
-    if (this.props.pathName === this.props.link) {
+    if (this.props.pathName === `/${getCurrentLocal()}${this.props.link}`) {
       return `${defaultClasses} active`
     }
 

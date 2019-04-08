@@ -23,6 +23,15 @@ module.exports = {
         trackingId: 'UA-25767197-1',
       },
     },
+    {
+      resolve: 'gatsby-plugin-intl',
+      options: {
+        path: `${__dirname}/src/i18n`,
+        languages: ['fr', 'en'],
+        defaultLanguage: 'en',
+        redirect: true
+      },
+    },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt'
   ]

@@ -1,23 +1,24 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { injectIntl } from 'gatsby-plugin-intl'
 
 /** Components */
 import Navbar from '../components/navbar'
 
 const defaultTitle = 'Johann SERVOIRE'
-const defaultDescription = 'Web developer and open-sourcerer'
+const defaultDescription = 'header.defaultDescription'
 
-export default class Header extends React.Component {
+class Header extends React.Component {
   get title() {
     return this.props.title
-      ? `${this.props.title} - ${defaultTitle}`
+      ? `${this.props.intl.formatMessage({ id: this.props.title })} - ${defaultTitle}`
       : defaultTitle
   }
 
   get description() {
     return this.props.description
-      ? this.props.description
-      : defaultDescription
+      ? this.props.intl.formatMessage({ id: this.props.description })
+      : this.props.intl.formatMessage({ id: defaultDescription })
   }
 
   render() {
@@ -34,3 +35,5 @@ export default class Header extends React.Component {
     )
   }
 }
+
+export default injectIntl(Header)

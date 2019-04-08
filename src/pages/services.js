@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-intl'
 
 /** Components */
 import Container from '../components/container'
