@@ -41,6 +41,10 @@ class Navbar extends React.Component {
   }
 
   itemActive(local) {
+    if (typeof window === 'undefined') {
+      return ''
+    }
+
     const currentUrl = window.location.href
 
     if (currentUrl.indexOf(local) !== -1) {

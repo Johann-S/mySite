@@ -11,21 +11,21 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "boxicons": "^1.9.1",
-    "gatsby": "^2.1.18",
-    "gatsby-plugin-google-analytics": "^2.0.14",
+    "boxicons": "^1.9.3",
+    "gatsby": "^2.3.17",
+    "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-intl": "^0.1.7",
-    "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-robots-txt": "^1.4.0",
-    "gatsby-plugin-sitemap": "^2.0.6",
+    "gatsby-plugin-sitemap": "^2.0.12",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.7",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
+    "popper.js": "^1.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "gatsby-plugin-purgecss": "^3.1.0"
+    "gatsby-plugin-purgecss": "^3.1.1"
   },
   "repository": {
     "type": "git",
