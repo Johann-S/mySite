@@ -5,6 +5,9 @@ import { injectIntl } from 'gatsby-plugin-intl'
 /** Components */
 import Navbar from '../components/navbar'
 
+/** Utils */
+import { getCurrentLocal } from '../util'
+
 const defaultTitle = 'Johann SERVOIRE'
 const defaultDescription = 'header.defaultDescription'
 
@@ -25,7 +28,7 @@ class Header extends React.Component {
     return (
       <div className="mb-2">
         <Helmet>
-          <html className="h-100" />
+          <html className="h-100" lang={getCurrentLocal()} />
           <title>{this.title}</title>
           <meta name="description" content={this.description} />
           <body className="h-100" />

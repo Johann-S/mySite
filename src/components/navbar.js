@@ -16,11 +16,12 @@ import NavbarItem from './navbar-item'
 
 class Navbar extends React.Component {
   home() {
-    if (this.props.location.pathname === '/') {
+    if (this.props.location.pathname === '/fr/' || this.props.location.pathname === '/en/') {
       return (<span>Johann SERVOIRE</span>)
     } else {
       return (
         <Link to="/">
+          <span className="sr-only">{this.props.intl.formatMessage({ id: 'navbar.home' })}</span>
           <box-icon type="regular"
                     animation="tada-hover"
                     name="home"></box-icon>
@@ -54,12 +55,18 @@ class Navbar extends React.Component {
     return ''
   }
 
+  changeLang(lang) {
+    changeLocale(lang)
+    document.documentElement.setAttribute('lang', lang)
+  }
+
   render() {
     return (
       <nav className="navbar navbar-expand-md navbar-shadow pb-0">
         <div className="navbar-brand">{this.home()}</div>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
           <span className="navbar-toggler-icon"></span>
+          <span className="sr-only">{this.props.intl.formatMessage({ id: 'navbar.sr.changeLang' })}</span>
         </button>
         <div className="collapse navbar-collapse" id="navbarMenu">
           <ul className="navbar-nav ml-auto">
@@ -87,12 +94,12 @@ class Navbar extends React.Component {
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <button type="button"
                           className={`btn btn-light dropdown-item ${this.itemActive('/en/')}`}
-                          onClick={() => changeLocale('en')}>
+                          onClick={() => this.changeLang('en')}>
                     <img src={flagEn} alt={this.props.intl.formatMessage({ id: 'navbar.english' })} /> <FormattedMessage id="navbar.english" />
                   </button>
                   <button type="button"
                           className={`btn btn-light dropdown-item ${this.itemActive('/fr/')}`}
-                          onClick={() => changeLocale('fr')}>
+                          onClick={() => this.changeLang('fr')}>
                     <img src={flagFr} alt={this.props.intl.formatMessage({ id: 'navbar.french' })} /> <FormattedMessage id="navbar.french" />
                   </button>
                 </div>

@@ -11,6 +11,7 @@
   "navbar.projects": "Projects",
   "navbar.experiences": "Experiences",
   "navbar.alt.currentLang": "Current lang",
+  "navbar.sr.changeLang": "Change lang",
   "navbar.french": "French",
   "navbar.english": "English",
   "404.message": "I think you're lost...",
