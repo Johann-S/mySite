@@ -11,9 +11,10 @@ module.exports = {
       options: {
         ignore: ['src/css/'],
         whitelist: [
-          'collapsing' ,
+          'collapsing',
           'fade',
-          'collapse'
+          'collapse',
+          'show'
         ]
       }
     },
