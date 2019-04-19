@@ -6,9 +6,6 @@ import Container from '../components/container'
 import Content from '../components/content'
 import Header from '../components/header'
 
-/** Styles */
-import '../css/projects.css'
-
 export default ({ location }) => {
   return (
     <Container>
