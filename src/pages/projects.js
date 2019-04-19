@@ -1,6 +1,5 @@
 import React from 'react'
 import { FormattedMessage } from 'gatsby-plugin-intl'
-import 'boxicons'
 
 /** Components */
 import Container from '../components/container'

@@ -1,3 +1,23 @@
 box-icon {
   vertical-align: middle;
 }
+
+.box-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-block;
+  font-size: initial;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.box-icon.xs {
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: initial;
+}
+
+.box-icon svg {
+  width: 100%;
+  height: 100%;
+}
