@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: johann-servoire.fr
+Token: a09e0be9c4b615369de6057eda5f5f91ba9c75cebe576fb12627d1a76f93600e
