@@ -13,6 +13,11 @@
   vertical-align: initial;
 }
 
+.box-icon.sm {
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
 .box-icon svg {
   width: 100%;
   height: 100%;
