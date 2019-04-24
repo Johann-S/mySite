@@ -2,6 +2,7 @@ import React from 'react'
 import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 
 /** Components */
+import BadgeExperience from '../components/badge-experience'
 import Container from '../components/container'
 import Content from '../components/content'
 import Header from '../components/header'
@@ -15,11 +16,7 @@ const Experiences = ({ intl, location }) => {
         <h1 className="mb-3">{intl.formatMessage({ id: 'navbar.experiences' })}</h1>
         <div className="mb-2">
           <p>
-            <span className="badge badge-info mr-2">
-              <span className="align-middle">2018</span>
-              <box-icon rotate="180" color="white" name="arrow-back"></box-icon>
-              <span className="align-middle">?</span>
-            </span>
+            <BadgeExperience startYear="2018" endYear="?" />
             <FormattedMessage id="index.currentJob">
               {(txt) => (<span className="align-middle">{txt} <a className="text-decoration-none" href="https://www.groupe-ldlc.com/">LDLC</a></span>)}
             </FormattedMessage>
@@ -39,11 +36,7 @@ const Experiences = ({ intl, location }) => {
         <hr></hr>
         <div className="mb-2">
           <p>
-            <span className="badge badge-info mr-2">
-              <span className="align-middle">2016</span>
-              <box-icon rotate="180" color="white" name="arrow-back"></box-icon>
-              <span className="align-middle">?</span>
-            </span>
+            <BadgeExperience startYear="2016" endYear="?" />
             <FormattedMessage id="index.bootstrap">
               {(txt) => (<span className="align-middle">{txt} <a className="text-decoration-none" href="https://getbootstrap.com/">Bootstrap</a></span>)}
             </FormattedMessage>
@@ -63,11 +56,7 @@ const Experiences = ({ intl, location }) => {
         <hr></hr>
         <div className="mb-2">
           <p>
-            <span className="badge badge-info mr-2">
-              <span className="align-middle">2016</span>
-              <box-icon rotate="180" color="white" name="arrow-back"></box-icon>
-              <span className="align-middle">2017</span>
-            </span>
+            <BadgeExperience startYear="2016" endYear="2017" />
             <span className="align-middle">
               <FormattedMessage id="experiences.sii" />
               <a className="text-decoration-none" href="http://www.groupe-sii.com/">SII</a>
@@ -81,11 +70,7 @@ const Experiences = ({ intl, location }) => {
         <hr></hr>
         <div>
           <p>
-            <span className="badge badge-info mr-2">
-              <span className="align-middle">2012</span>
-              <box-icon rotate="180" color="white" name="arrow-back"></box-icon>
-              <span className="align-middle">2016</span>
-            </span>
+            <BadgeExperience startYear="2012" endYear="2016" />
             <span className="align-middle">
               <FormattedMessage id="experiences.it" />
               <a className="text-decoration-none" href="https://www.interactiv-technologies.com/fr/">Interactiv' Technologies</a>
