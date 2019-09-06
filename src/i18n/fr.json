@@ -28,6 +28,8 @@
   "projects.orYouStalk": " où vous pouvez ",
   "projects.stalk": "m'espionner",
   "projects.donation": "Si vous souhaitez soutenir mon travail, vous pouvez faire un don ici ",
+  "projects.brave": "Télécharger Brave",
+  "projects.fusv": "Un invite de commande qui permet de rechercher les variable SCSS non utilisées",
   "contact.info": "Offres d'emploi, projets ou simplement des questions envoyez moi un email.",
   "experiences.ldlc1": "Développement d'une application avec Angular 7 à destination des magasins du groupe LDLC pour qu'ils puissent vendre et gérer leurs stocks",
   "experiences.ldlc2": "Création d'une application mobile (Android, iOS) pour permettre aux magasins de réaliser des inventaires de leurs stocks",

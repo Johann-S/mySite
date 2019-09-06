@@ -28,6 +28,8 @@
   "projects.orYouStalk": " or you can ",
   "projects.stalk": "stalk me",
   "projects.donation": "If you want to support my work you can make donations here",
+  "projects.brave": "Download Brave",
+  "projects.fusv": "A CLI to find unused SCSS variables",
   "contact.info": "If you want to contact me about job offers, projects or any questions, drop me an email.",
   "experiences.ldlc1": "Built a web app with Angular 7 for LDLC shops to sell and manage their stock",
   "experiences.ldlc2": "Developed a hybrid mobile app on Android and iOS with Ionic and Angular 7 to allow shops to do an inventory of their shop's stock",

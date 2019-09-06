@@ -1,12 +1,18 @@
 import React from 'react'
-import { FormattedMessage } from 'gatsby-plugin-intl'
+import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl'
 
 /** Components */
 import Container from '../components/container'
 import Content from '../components/content'
 import Header from '../components/header'
 
-export default ({ location }) => {
+/** Images */
+import brave from '../images/brave.png'
+
+/** Styles */
+import '../css/projects.css'
+
+const Projects = ({ location, intl }) => {
   return (
     <Container>
       <Header location={location}
@@ -50,6 +56,16 @@ export default ({ location }) => {
               </FormattedMessage>
             </div>
           </div>
+          <div className="row">
+            <div className="col-6">
+              <h4>
+                <a className="text-decoration-none" href="https://www.npmjs.com/package/find-unused-sass-variables">find-unused-sass-variables</a>
+              </h4>
+              <FormattedMessage id="projects.fusv">
+                {(txt) => (<p>{txt}</p>)}
+              </FormattedMessage>
+            </div>
+          </div>
           <div className="row mt-5">
             <h2>
               <FormattedMessage id="projects.supportWork">
@@ -70,7 +86,7 @@ export default ({ location }) => {
                   </a>
                 </span>
                 <FormattedMessage id="projects.orYouStalk" />
-                <a href="https://gitstalk.netlify.com/johann-s">
+                <a className="text-decoration-none" href="https://gitstalk.netlify.com/johann-s">
                   <FormattedMessage id="projects.stalk" />
                 </a>.
               </p>
@@ -79,13 +95,18 @@ export default ({ location }) => {
               </FormattedMessage>
               <ul>
                 <li>
-                  <a href="https://www.patreon.com/jservoire">Patreon</a>
+                  <a className="text-decoration-none" href="https://www.patreon.com/jservoire">Patreon</a>
                 </li>
                 <li>
-                  <a href="https://www.paypal.me/jservoire">My PayPal</a>
+                  <a className="text-decoration-none" href="https://www.paypal.me/jservoire">My PayPal</a>
                 </li>
                 <li>
-                  <a href="https://liberapay.com/Johann-S/">Liberapay</a>
+                  <a className="text-decoration-none" href="https://liberapay.com/Johann-S/">Liberapay</a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="https://brave.com/joh343">
+                    <img className="brave-img" src={brave} alt={intl.formatMessage({ id: 'projects.brave' })} /> <FormattedMessage id="projects.brave" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -95,3 +116,5 @@ export default ({ location }) => {
     </Container>
   )
 }
+
+export default injectIntl(Projects)
